@@ -81,11 +81,13 @@ ul {
   color: #eaeaea;
 
   display: flex;
+  justify-content: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 li {
-  background-color: #fd6a4c;
+  background-color: #a36868;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
