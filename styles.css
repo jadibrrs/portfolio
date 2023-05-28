@@ -174,13 +174,30 @@ aside .foto_perfil {
 aside p{
   font-size: 2rem;
   color: #ffffff;
+  backgr: ;
+  padding: 16px;
+  border-radius: 8px;
   text-align: center;
   text-shadow: black;
 }
 
-aside span {
+aside .buttons {
+  margin: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+aside .buttons button {
   font-size: 0.90rem;
-  color: #9e9ea0;
+  padding: 12px;
+  border: solid 1px #9e9ea0;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+aside .buttons button a {
+  text-decoration: none;
+  color: #eaeaea;
 }
 
 @media (max-width: 768px) {
