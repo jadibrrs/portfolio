@@ -87,10 +87,12 @@ ul {
 }
 
 li {
-  background-color: #a36868;
+  color: #d47070;
+  border: solid 0.5px #bc5252;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
+  width: 100%;
 }
 
 .memory {
