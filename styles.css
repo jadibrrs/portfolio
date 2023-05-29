@@ -95,6 +95,10 @@ nav a h2 {
   color: #eaeaea;
 }
 
+nav div p a {
+  padding: 0;
+}
+
 ul {
   list-style-type: none;
   color: #eaeaea;
