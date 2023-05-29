@@ -53,10 +53,8 @@ nav {
 }
 
 .sobre_mim {
-  margin-bottom: 32px;
-  padding: 32px;
-  background: linear-gradient(#ff9513, black);
-  border-radius: 8px;
+  margin-bottom: 64px;
+
   display: flex;
   flex-direction: column;
   color: #eaeaea;
