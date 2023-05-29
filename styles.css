@@ -52,36 +52,40 @@ nav {
   animation: entering 0.7s ease-in-out;
 }
 
-nav .links_paginas {
-  margin: 16px 0 64px 0;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  padding: 12px;
-  border: solid 0.5px #a90909;
-  background-color: #eaeaea;
-  font-size: 1rem;
-  border: none
-}
-
-nav .links_paginas a {
-  text-decoration: none;
-  color: #a90909;
-}
-
 .sobre_mim {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   padding: 32px;
+  background: linear-gradient(#ff9513, black);
   border-radius: 8px;
-  background-color: #ffb04f;
-
   display: flex;
   flex-direction: column;
+  color: #eaeaea;
   gap: 16px;
+}
+
+.banners {
+  display: flex;
+  gap: 16px;
+}
+
+nav div a {
+  text-decoration: none;
+  color: #eaeaea;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.formacao {
+  background: linear-gradient(#009611, black);
+}
+
+.projetos {
+  background: linear-gradient(rgb(226, 59, 87), black);
 }
 
 nav div h1, nav div p {
-  color: black;
+  color: #eaeaea;
   font-size: 2rem;
 }
 
