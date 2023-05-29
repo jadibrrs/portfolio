@@ -82,6 +82,21 @@ nav div a {
   background: linear-gradient(rgb(226, 59, 87), black);
 }
 
+.menu {
+  display: flex;
+  margin-bottom: 64px;
+  background-color: #d37b33;
+  border: #131011;
+}
+
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  padding: 16px;
+  color: #eaeaea;
+  font-weight: 500;
+}
+
 nav div h1, nav div p {
   color: #eaeaea;
   font-size: 2rem;
