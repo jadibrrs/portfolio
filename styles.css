@@ -52,11 +52,28 @@ nav {
   animation: entering 0.7s ease-in-out;
 }
 
+nav .links_paginas {
+  margin: 16px 0 64px 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px;
+  border: solid 0.5px #a90909;
+  background-color: #eaeaea;
+  font-size: 1rem;
+  border: none
+}
+
+nav .links_paginas a {
+  text-decoration: none;
+  color: #a90909;
+}
+
 .sobre_mim {
   margin-bottom: 64px;
   padding: 32px;
   border-radius: 8px;
-  background-color: #eaeaea;
+  background-color: #ffb04f;
 
   display: flex;
   flex-direction: column;
@@ -180,24 +197,8 @@ aside p{
   text-align: center;
   text-shadow: black;
 }
-
-aside .buttons {
-  margin: 16px;
-  display: flex;
-  gap: 16px;
-}
-
-aside .buttons button {
-  font-size: 0.90rem;
-  padding: 12px;
-  border: solid 1px #9e9ea0;
-  border-radius: 8px;
-  background-color: transparent;
-}
-
-aside .buttons button a {
-  text-decoration: none;
-  color: #eaeaea;
+aside p small {
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
