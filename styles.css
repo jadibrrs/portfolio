@@ -85,7 +85,7 @@ nav div a {
 .menu {
   display: flex;
   margin-bottom: 64px;
-  background-color: #d94a2e;
+  background: linear-gradient(#f80441, #540116);
   border: #131011;
 }
 
@@ -94,7 +94,7 @@ nav div a {
   text-align: center;
   padding: 16px;
   color: #eaeaea;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav div h1, nav div p {
@@ -106,8 +106,21 @@ nav div p{
   font-size: 1.2rem;
 }
 
-nav a h2 {
+.content {
+  margin: 22px 0 68px 0;
+}
+
+nav div button {
+  border-radius: 8px;
+  background: linear-gradient(#004faf, #002c62);
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
   color: #eaeaea;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 nav div p a {
@@ -117,27 +130,29 @@ nav div p a {
 ul {
   list-style-type: none;
   color: #eaeaea;
-
+  background-color: #131011;
   display: flex;
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 li {
-  color: #d47070;
-  border: solid 0.5px #bc5252;
+  margin-top: 24px;
+  color: #002c62;
+  background-color: #eaeaea;
+  border: solid 0.5px #002c62;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
-  width: 100%;
+  font-size: 16px;
 }
 
 .memory {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 64px;
 
   text-decoration: none;
 }
@@ -176,6 +191,10 @@ li {
   font-size: 1.2rem;
   color: #bebebf;
   line-height: 28px;
+}
+
+.memory section {
+  display: none;
 }
 
 aside{
@@ -222,7 +241,7 @@ aside p small {
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   :root {
     font-size: 14px;
   }
