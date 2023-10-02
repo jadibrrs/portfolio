@@ -29,9 +29,25 @@ function mostrarProz(event){
   `
 };
 
+function mostrarAtlantico(event){
+  event.preventDefault();
+  document.getElementById("elemento-pai-atlantico").innerHTML = `
+  <ul>
+    <li>Fundamentos de Qualidade e Teste de Software</li>
+    <li>Tipos e Níveis de Testes/Pirâmides de Testes</li>
+    <li>Estratégia e Técnicas de testes</li>
+    <li>Processo Fundamental de Teste</li>
+    <li>Processo de Teste Ágil</li>
+    <li>Introdução à Automação de Testes</li>
+    <li>Automação de Testes Funcionais</li>
+    <li>Automação de Testes de API</li>
+  </ul>
+  `
+};
+
 function mostrarDescodificadas(event){
   event.preventDefault();
-  document.getElementById("elemento-pai-elasnatech").innerHTML = `
+  document.getElementById("elemento-pai-descodificadas").innerHTML = `
   <ul>
     <li>Competências socioemocionais visando o autodesenvolvimento</li>
     <li>Trilha 1: Descobrindo o caminho para a programação web</li>
@@ -42,7 +58,25 @@ function mostrarDescodificadas(event){
   `
 };
 
-
+function mostrarJiraConfluence(event){
+  event.preventDefault();
+  document.getElementById("elemento-pai-jira-confluence").innerHTML = `
+  <ul>
+    <li>Jira para times ágeis</li>
+    <li>Scrum e Kanban no Jira</li>
+    <li>Configurando o Workflow no Jira</li>
+    <li>Épicos, histórias e tarefas no Jira</li>
+    <li>Estimativa e rastreamento do tempo no Jira</li>
+    <li>Gerenciamento de testes com Zephyr no Jira</li>
+    <li>Criando o Roadmap no Jira</li>
+    <li>Criando consultas avançadas no Jira com JQL</li>
+    <li>Relatórios no Jira</li>
+    <li>Jira Portfolio (Advanced Roadmaps)</li>
+    <li>Começando com Confluence</li>
+    <li>Utilizando Jira com Confluence</li>
+  </ul>
+  `
+};
 
 
 

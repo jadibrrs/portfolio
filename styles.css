@@ -39,7 +39,7 @@ body{
 
   display: grid;
   grid-template-areas: "profile timeline";
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.75fr 2fr;
   grid-template-rows: 100vh;
 }
 
