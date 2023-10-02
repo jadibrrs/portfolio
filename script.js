@@ -25,22 +25,21 @@ function mostrarProz(event){
     <li>CSS</li>
     <li>JavaScript</li>
     <li>Banco de Dados</li>
-    <li>Projeto integrador: Desenvolvimento do primeiro site responsivo.</li>
   </ul>
   `
 };
 
-function mostrarElasnatech(event){
+function mostrarDescodificadas(event){
   event.preventDefault();
   document.getElementById("elemento-pai-elasnatech").innerHTML = `
   <ul>
-    <li>Ambiente de desenvolvimento: VS Code, Git e GitHub</li>
-    <li>Fundamentos WEB: estrutura de sites com HTML, estilização com CSS e sites dinâmicos com JavaScript</li>
-    <li>Aprimorando: bootstrap e lógica de programação</li>
-    <li>Linguagens: Python, PHP e Java</li>
+    <li>Competências socioemocionais visando o autodesenvolvimento</li>
+    <li>Trilha 1: Descobrindo o caminho para a programação web</li>
+    <li>Trilha 2: Avançando no caminho para a programação web</li>
+    <li>Trilha 3: Construindo e integrando aplicações de Front-end</li>
+    <li>Trilha 4: Construindo e integrando aplicações de Back-end</li>
   </ul>
   `
-
 };
 
 
