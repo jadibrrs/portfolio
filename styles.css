@@ -41,6 +41,11 @@ body{
   grid-template-areas: "profile timeline";
   grid-template-columns: 0.75fr 2fr;
   grid-template-rows: 100vh;
+
+  background: url("assets/fundo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 160%;
 }
 
 nav {
@@ -209,10 +214,8 @@ aside{
   border-right: solid 1px ;
   border-image: linear-gradient(#727275, #2c2c31) 1;
 
-  background-image: url("./assets/16080144_abstract_modern_rainbow_waves_background_3006.jpg");
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: auto 160%;
+
+
 }
 
 aside * {
@@ -225,7 +228,7 @@ aside .foto_perfil {
   border-radius: 50%;
 
   border: 5px solid transparent;
-  background: linear-gradient(#d39e33, #fd6a4c, #960032) padding-box, linear-gradient(270deg, #d39e33, #fd6a4c, #960032) border-box;
+  background: linear-gradient(270deg, #ffffff, #eaeaea) border-box;
 }
 
 aside p{
