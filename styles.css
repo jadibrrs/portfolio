@@ -126,6 +126,7 @@ nav div button {
   border-radius: 8px;
   display: flex;
   justify-content: center;
+  margin-bottom: 0px;
 }
 
 nav div p a {
@@ -134,20 +135,20 @@ nav div p a {
 
 ul {
   list-style-type: none;
-  color: #eaeaea;
-  background-color: #131011;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
   flex-wrap: wrap;
   width: 100%;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 li {
-  margin-top: 24px;
+  margin-top: 0px;
   color: #002c62;
   background-color: #eaeaea;
-  border: solid 0.5px #002c62;
   padding: 16px;
   border-radius: 8px;
   text-align: center;

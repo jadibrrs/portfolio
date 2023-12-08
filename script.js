@@ -7,7 +7,7 @@ function mostrarQa(event){
     <li>Introdução à Qualidade</li>
     <li>Cultura da Qualidade</li>
     <li>Metodologia Ágil</li>
-    <li>Gestão de projetos</li>
+    <li>Gestão de Projetos</li>
     <li>Teste de Software</li>
     <li>MongoDB</li>
     <li>Postman</li>
@@ -19,7 +19,7 @@ function mostrarProz(event){
   event.preventDefault();
   document.getElementById("elemento-pai-proz").innerHTML = `
   <ul>
-    <li>Lógica de programação</li>
+    <li>Lógica de Programação</li>
     <li>Git e GitHub</li>
     <li>HTML</li>
     <li>CSS</li>
