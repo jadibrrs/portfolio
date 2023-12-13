@@ -45,15 +45,19 @@ function mostrarAtlantico(event){
   `
 };
 
-function mostrarDescodificadas(event){
+function mostrarEstagio(event){
   event.preventDefault();
-  document.getElementById("elemento-pai-descodificadas").innerHTML = `
+  document.getElementById("elemento-pai-estagio").innerHTML = `
   <ul>
-    <li>Competências socioemocionais visando o autodesenvolvimento</li>
-    <li>Trilha 1: Descobrindo o caminho para a programação web</li>
-    <li>Trilha 2: Avançando no caminho para a programação web</li>
-    <li>Trilha 3: Construindo e integrando aplicações de Front-end</li>
-    <li>Trilha 4: Construindo e integrando aplicações de Back-end</li>
+    <li>Realização de testes funcionais manuais em sistemas web</li>
+    <li>Realização de testes de regressão e integração</li>
+    <li>Prototipação de funcionalidades</li>
+    <li>Experiência prática com metodologia ágil</li>
+    <li>Utilização do software Jira para gerenciamento de projetos</li>
+    <li>Documentação de projetos de sistemas</li>
+    <li>Análise de requisitos e especificações</li>
+    <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas</li>
+    <li>Participação em reuniões de equipe para discussão de progresso e metas</li>
   </ul>
   `
 };
