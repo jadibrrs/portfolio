@@ -82,7 +82,24 @@ function mostrarJiraConfluence(event){
   `
 };
 
-
+function mostrarTAT(event){
+  event.preventDefault();
+  document.getElementById("elemento-pai-tat").innerHTML = `
+  <ul>
+    <li>Configurar um projeto Cypress do zero</li>
+    <li>Visitar páginas locais e remotas</li>
+    <li>Lidar com os elementos mais comuns encontrados em aplicações web</li>
+    <li>Testar upload de arquivos</li>
+    <li>Realizar diversas verificações de resultados esperados</li>
+    <li>Criar comandos customizados</li>
+    <li>Lidar com links que abrem em outra aba do navegador</li>
+    <li>Rodar testes simulando as dimensões de um dispositivo móvel</li>
+    <li>Resolver os mesmos problemas de diferentes formas, conhecendo a API do Cypress</li>
+    <li>Executar os testes em um pipeline de integração contínua</li>
+    <li>Criar uma documentação mínima para seu projeto de testes automatizados</li>
+  </ul>
+  `
+};
 
 
 
