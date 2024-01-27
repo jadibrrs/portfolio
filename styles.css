@@ -159,7 +159,7 @@ li {
   margin-top: 0px;
   color: #002c62;
   background-color: #eaeaea;
-  padding: 16px;
+  padding: 10px 16px 10px 16px;
   border-radius: 8px;
   text-align: center;
   font-size: 16px;
@@ -240,6 +240,10 @@ aside{
 
 aside * {
   animation: entering 0.7s ease-in-out;
+}
+
+aside div div a {
+  text-decoration: none;
 }
 
 aside .foto_perfil {
