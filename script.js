@@ -53,19 +53,21 @@ function mostrarAtlantico(event) {
 
 function mostrarEstagio(event) {
   event.preventDefault()
-  toggleContent("elemento-pai-estagio", `
+  toggleContent(
+    "elemento-pai-estagio",
+    `
   <ul>
-    <li>Realização de testes funcionais manuais em sistemas web</li>
-    <li>Realização de testes de regressão e integração</li>
-    <li>Prototipação de funcionalidades</li>
-    <li>Experiência prática com metodologia ágil</li>
-    <li>Utilização do software Jira para gerenciamento de projetos</li>
+    <li>Experiência com as metodologias Scrum e Kanban</li>
     <li>Documentação de projetos de sistemas</li>
     <li>Análise de requisitos e especificações</li>
-    <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas</li>
+    <li>Elaboração e execução de testes manuais funcionais em sistemas web</li>
+    <li>Identificação, documentação e rastreamento de defeitos</li>
+    <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas e bugs</li>
+    <li> Prototipação de funcionalidades</li>
     <li>Participação em reuniões de equipe para discussão de progresso e metas</li>
   </ul>
-  `);
+  `
+  )
 }
 
 function mostrarJiraConfluence(event) {
@@ -105,6 +107,42 @@ function mostrarTAT(event) {
     <li>Criar uma documentação mínima para seu projeto de testes automatizados</li>
   </ul>
   `);
+}
+
+function mostrarVincit(event) {
+  event.preventDefault()
+  toggleContent(
+    "elemento-pai-vincit",
+    `
+  <ul>
+    <li>Algoritmos e Lógica de Programação</li>
+    <li>Análise Orientada a Objetos</li>
+    <li>Arquitetura e Organização de Computadores</li>
+    <li>Comunicação Empresarial Estratégica</li>
+    <li>Engenharia de Software</li>
+    <li>Engenharia de Requisitos e Processo e Desenvolvimento de Software</li>
+    <li>Estrutura de Dados</li>
+    <li>Gerenciamento de Banco de Dados</li>
+    <li>Gestão de Projetos</li>
+    <li>Governança em TI</li>
+    <li>Modelagem de Banco de Dados</li>
+    <li>Matemática e Lógica Computacional</li>
+    <li>Organização e Manipulação em Estrutura de Dados</li>
+    <li>Programação Estruturada</li>
+    <li>Programação Orientada a Objetos</li>
+    <li>Projeto e Modelagem de Dados</li>
+    <li>Programação para Internet</li>
+    <li>Programação para Dispositivos Móveis</li>
+    <li>Padrões de Projetos</li>
+    <li>Qualidade e Teste de Software</li>
+    <li>Redes de Computadores e Segurança</li>
+    <li>Sustentabilidade, Responsabilidade Social e Direitos Humanos</li>
+    <li>Sistemas de Informação</li>
+    <li>Sistemas Operacionais</li>
+    <li>Tecnologias para Gestão de Dados</li>
+  </ul>
+  `
+  )
 }
 
 // <br>
