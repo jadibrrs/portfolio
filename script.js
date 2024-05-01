@@ -46,16 +46,13 @@ function mostrarAtlantico(event) {
       <li>Fundamentos de Qualidade e Teste de Software</li>
       <li>Tipos e Níveis de Testes/Pirâmides de Testes</li>
       <li>Estratégia e Técnicas de testes</li>
-      <!-- Adicione mais itens conforme necessário -->
     </ul>
   `);
 }
 
 function mostrarEstagio(event) {
   event.preventDefault()
-  toggleContent(
-    "elemento-pai-estagio",
-    `
+  toggleContent("elemento-pai-estagio", `
   <ul>
     <li>Experiência com as metodologias Scrum e Kanban</li>
     <li>Documentação de projetos de sistemas</li>
@@ -63,11 +60,10 @@ function mostrarEstagio(event) {
     <li>Elaboração e execução de testes manuais funcionais em sistemas web</li>
     <li>Identificação, documentação e rastreamento de defeitos</li>
     <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas e bugs</li>
-    <li> Prototipação de funcionalidades</li>
+    <li>Prototipação de funcionalidades</li>
     <li>Participação em reuniões de equipe para discussão de progresso e metas</li>
   </ul>
-  `
-  )
+  `);
 }
 
 function mostrarJiraConfluence(event) {
@@ -111,9 +107,7 @@ function mostrarTAT(event) {
 
 function mostrarVincit(event) {
   event.preventDefault()
-  toggleContent(
-    "elemento-pai-vincit",
-    `
+  toggleContent("elemento-pai-vincit", `
   <ul>
     <li>Algoritmos e Lógica de Programação</li>
     <li>Análise Orientada a Objetos</li>
@@ -144,12 +138,3 @@ function mostrarVincit(event) {
   `
   )
 }
-
-// <br>
-// <li>Introdução à Qualidade</li>
-// <li>Cultura da Qualidade</li>
-// <li>Metodologia Ágil</li>
-// <li>Gestão de projetos</li>
-// <li>Teste de Software</li>
-// <li>MongoDB</li>
-// <li>Postman</li>
