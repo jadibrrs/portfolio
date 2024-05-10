@@ -138,3 +138,31 @@ function mostrarVincit(event) {
   `
   )
 }
+
+function mostrarMentoria(event) {
+  event.preventDefault()
+  toggleContent(
+    "elemento-pai-mentoria",
+    `
+  <ul>
+    <li>Mentalidade do QA</li>
+    <li>Testes no Modelo Cascata</li>
+    <li>Testes em Contexto Ágil</li>
+    <li>Arquitetura e Engenharia de Software para Testadores</li>
+    <li>Nivelamento Técnico de Programação em Java e SQL</li>
+    <li>Técnicas de Revisão</li>
+    <li>Identificando o Que Testar</li>
+    <li>Testes de API Rest</li>
+    <li>Testes Web</li>
+    <li>Testes Mobile com Android</li>
+    <li>Testes Desktop</li>
+    <li>Fundamentos e Boas Práticas da Automação de Testes</li>
+    <li>Gerindo Inconsistências</li>
+    <li>Testes Não Funcionais</li>
+    <li>Testes de Performance sob a Perspectiva do Servidor Web</li>
+    <li>Liderança em Teste de Software</li>
+    <li>Acervo Bibliográfico</li>
+  </ul>
+  `
+  )
+}
