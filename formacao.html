@@ -1,201 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
-  <link rel="icon" type="image/png" href="./assets/Jadi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
+    <link rel="icon" type="image/png" href="./assets/Jadi.png" />
 
-  <title>Jadi Barros | Portfólio</title>
-</head>
-<body>
-  <aside>
-    <img class="foto_perfil" src="./assets/jadi_porfolio.jpg" alt="Foto da Jadi" width="150px">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
 
-    <p>
-      <strong>JADI BARROS
-        <br>
-        <small>PORTFÓLIO</small>
-      </strong>
-    </p>
+    <title>Jadi Barros | Portfólio</title>
+  </head>
+  <body>
+    <aside>
+      <img
+        class="foto_perfil"
+        src="./assets/jadi_porfolio.jpg"
+        alt="Foto da Jadi"
+      />
 
-    <div class="redes">
-      <div class="rede">
-        <a href="https://www.instagram.com/jadibarros.qa/" target="_blank">
-        <img src="./assets\instagram.png" width="25px">
-        <p>Instagram</p>
-      </a>
+      <p>
+        <strong>JADI BARROS </strong>
+        <br />
+        <small>Analista de Testes e Qualidade de Software (QA)</small>
+      </p>
+
+      <div class="redes">
+        <div class="rede">
+          <a href="mailto:jbheliodoro@gmail.com" target="_blank">
+            <img src="./assets/email.png" width="25px" />
+            <p>E-mail</p>
+          </a>
+        </div>
+        <div class="rede">
+          <a href="https://github.com/jadibrrs" target="_blank">
+            <img src="./assets/github.png" width="25px" />
+            <p>GitHub</p>
+          </a>
+        </div>
+        <div class="rede">
+          <a href="https://www.instagram.com/jadibarros.qa/" target="_blank">
+            <img src="./assets/instagram.png" width="25px" />
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="rede">
+          <a href="https://www.linkedin.com/in/jadibarros/" target="_blank">
+            <img src="./assets/linkedin.png" width="25px" />
+            <p>LinkedIn</p>
+          </a>
+        </div>
       </div>
-      <div class="rede">
-        <a href="https://github.com/jadibrrs" target="_blank">
-        <img src="./assets\github.png" width="25px">
-        <p>GitHub</p>
-      </a>
+    </aside>
+
+    <nav>
+      <div class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./experiencia.html">Experiência</a>
+        <a href="./formacao.html">Formação</a>
+        <a href="./projetos.html">Projetos</a>
       </div>
-      <div class="rede">
-        <a href="https://www.linkedin.com/in/jadibarros/" target="_blank">
-        <img src="./assets\linkedin.png" width="25px">
-        <p>LinkedIn</p>
+
+      <a
+        href="https://www.faculdadevincit.edu.br/"
+        target="_blank"
+        class="memory"
+      >
+        <small>Junho de 2023 - Atualmente</small>
+        <h1>Graduação: Tecnologia em Análise e Desenvolvimento de Sistemas</h1>
+        <div>
+          <img src="./assets/vincit.png" />
+        </div>
+        <p>
+          <small> Oferecido por: Faculdade Vincit. </small>
+        </p>
       </a>
+      <div class="content">
+        <button onclick="mostrarVincit(event)">
+          <h3>Conhecer o conteúdo</h3>
+        </button>
+        <section id="elemento-pai-vincit"></section>
       </div>
-    </div>
-  </aside>
 
-  <nav>
-    <div class="menu">
-      <a href="./index.html">HOME</a>
-      <a href="./formacao.html">FORMAÇÃO</a>
-      <a href="./experiencia.html">EXPERIÊNCIA</a>
-      <a href="./projetos.html">PROJETOS</a>
-    </div>
+      <a
+        href="https://www.juliodelima.com.br/mentoria/"
+        target="_blank"
+        class="memory"
+      >
+        <small>Abril de 2024 - Atualmente</small>
+        <h1>Curso: Mentoria em Testes de Software com Júlio de Lima</h1>
+        <div>
+          <img src="./assets/mentoria.png" />
+        </div>
+        <p>
+          <small>
+            Oferecido por: Júlio de Lima Consultoria e Treinamentos de Testes de
+            Software.
+          </small>
+        </p>
+      </a>
+      <div class="content">
+        <button onclick="mostrarMentoria(event)">
+          <h3>Conhecer o conteúdo</h3>
+        </button>
+        <section id="elemento-pai-mentoria"></section>
+      </div>
 
-    <a href="https://www.faculdadevincit.edu.br/" target="_blank" class="memory">
-      <small>Junho de 2023 - Atualmente</small>
-      <h1>Graduação: Tecnologia em Análise e Desenvolvimento de Sistemas</h1>
+      <a
+        href="https://www.udemy.com/course/testes-automatizados-com-cypress-basico/"
+        target="_blank"
+        class="memory"
+      >
+        <small>Janeiro de 2024 - Janeiro de 2024</small>
+        <h1>Curso: Testes automatizados com Cypress - Básico</h1>
         <div>
-              <img src="./assets/vincit.png"/>
+          <img src="./assets/tat.png" />
         </div>
-      <p>
-        <small>
-          Oferecido por: Faculdade Vincit.
-        </small> 
-      </p>
-    </a>
-    <div class="content">
-      <button onclick="mostrarVincit(event)">
-        <h3>Conteúdo e habilidades desenvolvidas</h3>
-      </button>
-      <section id="elemento-pai-vincit">
-      </section>
-    </div>
-    
-    <a href="https://www.juliodelima.com.br/mentoria/" target="_blank" class="memory">
-      <small>Abril de 2024 - Atualmente</small>
-      <h1>Mentoria em Testes de Software com Júlio de Lima</h1>
-        <div>
-              <img src="./assets/mentoria.png"/>
-        </div>
-      <p>
-        <small>
-          Oferecido por: Júlio de Lima Consultoria e Treinamentos de Testes de Software.
-        </small> 
-      </p>
-    </a>
-    <div class="content">
-      <button onclick="mostrarMentoria(event)">
-        <h3>Conteúdo e habilidades desenvolvidas</h3>
-      </button>
-      <section id="elemento-pai-mentoria">
-      </section>
-    </div>
-    
-    <a href="https://www.udemy.com/course/testes-automatizados-com-cypress-basico/" target="_blank" class="memory">
-      <small>Janeiro de 2024 - Janeiro de 2024</small>
-      <h1>Curso: Testes automatizados com Cypress - Básico</h1>
-        <div>
-              <img src="./assets/tat.png"/>
-        </div>
-      <p>
-        <small>
-          Oferecido por: Talking About Testing (TAT).
-        </small> 
-      </p>
-    </a>
-    <div class="content">
-      <button onclick="mostrarTAT(event)">
-        <h3>Conteúdo e habilidades desenvolvidas</h3>
-      </button>
-      <section id="elemento-pai-tat">
-      </section>
-    </div>
+        <p>
+          <small> Oferecido por: Talking About Testing (TAT). </small>
+        </p>
+      </a>
+      <div class="content">
+        <button onclick="mostrarTAT(event)">
+          <h3>Conhecer o conteúdo</h3>
+        </button>
+        <section id="elemento-pai-tat"></section>
+      </div>
 
-    <a href="https://www.atlanticoavanti.com.br/bootcamp" target="_blank" class="memory">
-      <small>Agosto de 2023 - Setembro de 2023</small>
-      <h1>Bootcamp: Básico de Quality Assurance</h1>
+      <a
+        href="https://www.atlanticoavanti.com.br/bootcamp"
+        target="_blank"
+        class="memory"
+      >
+        <small>Agosto de 2023 - Setembro de 2023</small>
+        <h1>Bootcamp: Básico de Quality Assurance</h1>
         <div>
-              <img src="assets\atlantico.png" alt="Logo do Atlântico Avanti."/>
+          <img src="assets\atlantico.png" alt="Logo do Atlântico Avanti." />
         </div>
-      <p>
-        <small>
-          Oferecido por: Atlântico Avanti.
-        </small> 
-      </p>
-    </a>
-    <div class="content">
-      <button onclick="mostrarAtlantico(event)">
-        <h3>Conteúdo e habilidades desenvolvidas</h3>
-      </button>
-      <section id="elemento-pai-atlantico">
-      </section>
-    </div>
+        <p>
+          <small> Oferecido por: Atlântico Avanti. </small>
+        </p>
+      </a>
+      <div class="content">
+        <button onclick="mostrarAtlantico(event)">
+          <h3>Conhecer o conteúdo</h3>
+        </button>
+        <section id="elemento-pai-atlantico"></section>
+      </div>
 
-    <a href="https://canalvalor.com/curso-online-jira-confluence/" target="_blank" class="memory">
-      <small>Agosto de 2023 - Agosto de 2023</small>
-      <h1>Curso: Jira e Confluence</h1>
+      <a
+        href="https://canalvalor.com/curso-online-jira-confluence/"
+        target="_blank"
+        class="memory"
+      >
+        <small>Agosto de 2023 - Agosto de 2023</small>
+        <h1>Curso: Jira e Confluence</h1>
         <div>
-              <img src="assets\canal_valor.png" alt="Logo do CanalValor."/>
+          <img src="assets\canal_valor.png" alt="Logo do CanalValor." />
         </div>
-      <p>
-        <small>
-          Oferecido por: Canal Valor.
-        </small> 
-      </p>
-    </a>
-    <div class="content">
-      <button onclick="mostrarJiraConfluence(event)">
-        <h3>Conteúdo e habilidades desenvolvidas</h3>
-      </button>
-      <section id="elemento-pai-jira-confluence">
-      </section>
-    </div>
+        <p>
+          <small> Oferecido por: Canal Valor. </small>
+        </p>
+      </a>
+      <div class="content">
+        <button onclick="mostrarJiraConfluence(event)">
+          <h3>Conhecer o conteúdo</h3>
+        </button>
+        <section id="elemento-pai-jira-confluence"></section>
+      </div>
 
-    <a href="https://qacoders.com.br/" target="_blank" class="memory">
-      <small>Abril de 2023 - Junho de 2023</small>
-      <h1>Curso: Formação Quality Assurance</h1>
+      <a href="https://qacoders.com.br/" target="_blank" class="memory">
+        <small>Abril de 2023 - Junho de 2023</small>
+        <h1>Curso: Formação Quality Assurance</h1>
         <div>
-          <img src="./assets/Qa.Coders_remini.jpg" alt="Logo da instituição Qa.Coders."/>
+          <img
+            src="./assets/Qa.Coders_remini.jpg"
+            alt="Logo da instituição Qa.Coders."
+          />
         </div>
-      <p>
-        <small>
-          Oferecido por: Qa.Coders.
-        </small> 
-      </p>
-    </a>
-    <div class="content">
-      <button onclick="mostrarQa(event)">
-      <h3>Conteúdo e habilidades desenvolvidas</h3>
-      </button>
-      <section id="elemento-pai-qa">
-      </section>
-    </div>
+        <p>
+          <small> Oferecido por: Qa.Coders. </small>
+        </p>
+      </a>
+      <div class="content">
+        <button onclick="mostrarQa(event)">
+          <h3>Conhecer o conteúdo</h3>
+        </button>
+        <section id="elemento-pai-qa"></section>
+      </div>
 
-    <a href="https://www.portaltechs.com/" target="_blank" class="memory">
-      <small>Abril de 2023 - Interrompido em Junho de 2023</small>
-      <h1>Curso: Introdução à Programação com foco em Front-end</h1>
+      <a href="https://www.portaltechs.com/" target="_blank" class="memory">
+        <small>Abril de 2023 - Interrompido em Junho de 2023</small>
+        <h1>Curso: Introdução à Programação com foco em Front-end</h1>
         <div>
-              <img src="./assets/Proz_remini.jpg" alt="Logo da instituição Proz Educação."/>
+          <img
+            src="./assets/Proz_remini.jpg"
+            alt="Logo da instituição Proz Educação."
+          />
         </div>
-      <p>
-        <small>
-          Oferecido por: Portal Tech, programa criado pela AWS e pela Meta. Ministrado por: Proz Educação, um parceiro de treinamento AWS.
-        </small> 
-      </p>
-    </a>
-    <div class="content">
-      <button onclick="mostrarProz(event)">
-        <h3>Conteúdo e habilidades desenvolvidas</h3>
-      </button>
-      <section id="elemento-pai-proz">
-      </section>
-    </div>
-  </nav>
-</body>
+        <p>
+          <small>
+            Oferecido por: Portal Tech, programa criado pela AWS e pela Meta.
+            Ministrado por: Proz Educação, um parceiro de treinamento AWS.
+          </small>
+        </p>
+      </a>
+      <div class="content">
+        <button onclick="mostrarProz(event)">
+          <h3>Conhecer o conteúdo</h3>
+        </button>
+        <section id="elemento-pai-proz"></section>
+      </div>
+    </nav>
+  </body>
 </html>

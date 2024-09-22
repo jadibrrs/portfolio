@@ -32,14 +32,14 @@
   }
 }
 
-body{
+body {
   color: #0d3f7c;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-areas: "profile timeline";
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2.75fr;
   grid-template-rows: 100vh;
-  background: url("assets/fundo_1.svg");
+  background-color: #f1f3f5;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 160%;
@@ -54,12 +54,11 @@ nav {
   animation: entering 0.7s ease-in-out;
 }
 
-.sobre_mim, .banners, .memory, .projeto {
+.sobre_mim,
+.banners,
+.memory,
+.projeto {
   margin-bottom: 8px;
-  padding: 32px;
-  border-radius: 8px;
-  border: solid 1px #8ca3c0;
-  background-color: #f1f3f5;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -68,7 +67,8 @@ nav {
 .redes {
   gap: 0;
 }
-.rede, .redes {
+.rede,
+.redes {
   display: flex;
   text-align: center;
 }
@@ -87,7 +87,7 @@ nav {
 
 nav div a {
   text-decoration: none;
-  color: #0d3f7c;
+  color: #02234a;
   padding: 16px;
   width: 100%;
   border-radius: 8px;
@@ -109,12 +109,18 @@ nav div a {
   font-weight: 600;
 }
 
-nav div h1, nav div p {
-  color: #0d3f7c;
+nav div h1,
+nav div h2,
+nav div p {
+  color: #02234a;
   font-size: 2rem;
 }
 
-nav div p{
+nav div h2 {
+  font-size: 1.6rem;
+}
+
+nav div p {
   font-size: 1.2rem;
 }
 
@@ -125,43 +131,49 @@ nav div p{
 nav div button {
   border-radius: 8px;
   background: linear-gradient(#004faf, #002c62);
-  width: 100%;
+  width: 350px;
+  max-height: 40px;
   font-size: 16px;
   font-weight: 600;
   color: #eaeaea;
   padding: 8px;
   border-radius: 8px;
-  display: flex;
+  display: block;
   justify-content: center;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 nav div p a {
   padding: 0;
 }
 
+.resumo_qualificacoes {
+  padding: 16px;
+  border: solid 1px #0362d5;
+  border-radius: 8px;
+  display: grid;
+  gap: 16px;
+  background: linear-gradient(to bottom, #0362d5, white);
+  color: white;
+}
+
 ul {
   list-style-type: none;
-  background-color: #eaeaea;
-  border: 1px solid #cecce2;
-  display: flex;
+  display: block;
   justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
   width: 100%;
   padding: 16px;
+  border: solid 1px #002c62;
   border-radius: 8px;
 }
 
 li {
-  margin-top: 0px;
   color: #002c62;
-  background-color: #ffffff;
   padding: 10px 16px 10px 16px;
-  border-radius: 8px;
   text-align: left;
   font-size: 16px;
-  border: 1px solid #104990;
 }
 
 .memory {
@@ -172,14 +184,14 @@ li {
   text-decoration: none;
 }
 
-.memory small{
-  color: rgb(133, 137, 138); 
+.memory small {
+  color: rgb(133, 137, 138);
   font-size: 0.75rem;
 }
 
 .memory h1 {
   font-size: 2rem;
-  color: #0d3f7c;
+  color: #02234a;
 }
 
 .memory img {
@@ -204,7 +216,7 @@ li {
 
 .memory p {
   font-size: 1.2rem;
-  color: #4980c4;
+  color: #02234a;
   line-height: 28px;
 }
 
@@ -220,38 +232,94 @@ li {
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .iframe-wrapper {
-    position: relative;
-    width: 100%; 
-    padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
 }
 
 .iframe-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: solid 1px #8ca3c0;
-    border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #8ca3c0;
+  border-radius: 8px;
 }
 
-aside{
+/* Estilos para o modal (inicialmente oculto) */
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed; /* Fixo na tela */
+  z-index: 1; /* Fica acima de todo o conteúdo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+}
+
+/* Conteúdo do modal (centralizado e ajustado) */
+.modal-conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o modal */
+  width: 70%;
+  height: 70%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+  border: solid 1px #8ca3c0;
+  border-radius: 8px;
+  height: fill;
+  width: fill;
+}
+
+/* Botão para fechar o modal */
+.fechar {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 12px 6px 12px;
+  background-color: white;
+  border-radius: 8px;
+  border: solid;
+}
+
+.fechar:hover,
+.fechar:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+aside {
   grid-area: profile;
   background: #001632;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   gap: 50px;
-
-  border-right: solid 1px ;
-  border-radius: 0 10px 10px 0;
+  padding: 64px 16px 16px 16px;
+  border-right: solid 1px;
 }
 
 aside * {
@@ -263,15 +331,15 @@ aside div div a {
 }
 
 aside .foto_perfil {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 
   border: 3px solid transparent;
   background: linear-gradient(270deg, #ffffff, #eaeaea) border-box;
 }
 
-aside p{
+aside p {
   font-size: 1.7rem;
   color: #ffffff;
   padding: 16px;
@@ -291,9 +359,9 @@ aside p small {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.8fr;
-    grid-template-areas: 
-    "profile"
-    "timeline";
+    grid-template-areas:
+      "profile"
+      "timeline";
   }
 
   aside {
