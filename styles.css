@@ -128,7 +128,7 @@ nav div p {
   margin: 16px 0 48px 0;
 }
 
-nav div button {
+nav button {
   border-radius: 8px;
   background: linear-gradient(#004faf, #002c62);
   width: 350px;
@@ -140,7 +140,7 @@ nav div button {
   border-radius: 8px;
   display: block;
   justify-content: center;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 
 nav div p a {
@@ -155,6 +155,67 @@ nav div p a {
   gap: 16px;
   background: linear-gradient(to bottom, #137dff, white);
   color: white;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center; /* Garante que o toggle e o texto fiquem centralizados verticalmente */
+  gap: 10px; /* Espaço entre o texto e o switch */
+}
+
+h3 {
+  padding-bottom: 12px; /* Remove a margem do h3 */
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 35px;
+  margin-bottom: 16px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #002c62;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Adicionar uma sombra sutil ao toggle */
+.slider:before {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
 ul {
@@ -199,7 +260,7 @@ li {
   height: 280px;
   object-fit: cover;
   border-radius: 8px;
-  border: solid 1px #8ca3c0;
+  border: solid 1px #afc8e7;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -334,7 +395,6 @@ aside .foto_perfil {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-
   border: 3px solid transparent;
   background: linear-gradient(270deg, #ffffff, #eaeaea) border-box;
 }
@@ -376,9 +436,10 @@ aside p small {
 }
 
 @media (max-width: 480px) {
-  nav div button {
+  nav button {
     width: 100%;
     max-height: none;
+    margin: 0 0 16px 0;
   }
 
   li {

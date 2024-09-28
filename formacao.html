@@ -84,9 +84,13 @@
         </p>
       </a>
       <div class="content">
-        <button onclick="mostrarVincit(event)">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggle-atividade" onclick="mostrarVincit(event)" />
+            <span class="slider"></span>
+          </label>
           <h3>Conhecer o conteúdo</h3>
-        </button>
+        </div>
         <section id="elemento-pai-vincit"></section>
       </div>
 
@@ -108,9 +112,13 @@
         </p>
       </a>
       <div class="content">
-        <button onclick="mostrarMentoria(event)">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" onclick="mostrarMentoria(event)" />
+            <span class="slider"></span>
+          </label>
           <h3>Conhecer o conteúdo</h3>
-        </button>
+        </div>
         <section id="elemento-pai-mentoria"></section>
       </div>
 
@@ -129,9 +137,13 @@
         </p>
       </a>
       <div class="content">
-        <button onclick="mostrarTAT(event)">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" onclick="mostrarTAT(event)" />
+            <span class="slider"></span>
+          </label>
           <h3>Conhecer o conteúdo</h3>
-        </button>
+        </div>
         <section id="elemento-pai-tat"></section>
       </div>
 
@@ -150,31 +162,14 @@
         </p>
       </a>
       <div class="content">
-        <button onclick="mostrarAtlantico(event)">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" onclick="mostrarAtlantico(event)" />
+            <span class="slider"></span>
+          </label>
           <h3>Conhecer o conteúdo</h3>
-        </button>
-        <section id="elemento-pai-atlantico"></section>
-      </div>
-
-      <a
-        href="https://canalvalor.com/curso-online-jira-confluence/"
-        target="_blank"
-        class="memory"
-      >
-        <small>Agosto de 2023 - Agosto de 2023</small>
-        <h1>Curso: Jira e Confluence</h1>
-        <div>
-          <img src="assets\canal_valor.png" alt="Logo do CanalValor." />
         </div>
-        <p>
-          <small> Oferecido por: Canal Valor. </small>
-        </p>
-      </a>
-      <div class="content">
-        <button onclick="mostrarJiraConfluence(event)">
-          <h3>Conhecer o conteúdo</h3>
-        </button>
-        <section id="elemento-pai-jira-confluence"></section>
+        <section id="elemento-pai-atlantico"></section>
       </div>
 
       <a href="https://qacoders.com.br/" target="_blank" class="memory">
@@ -191,9 +186,13 @@
         </p>
       </a>
       <div class="content">
-        <button onclick="mostrarQa(event)">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" onclick="mostrarQa(event)" />
+            <span class="slider"></span>
+          </label>
           <h3>Conhecer o conteúdo</h3>
-        </button>
+        </div>
         <section id="elemento-pai-qa"></section>
       </div>
 
@@ -214,10 +213,35 @@
         </p>
       </a>
       <div class="content">
-        <button onclick="mostrarProz(event)">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" onclick="mostrarProz(event)" />
+            <span class="slider"></span>
+          </label>
           <h3>Conhecer o conteúdo</h3>
-        </button>
+        </div>
         <section id="elemento-pai-proz"></section>
+      </div>
+
+      <a href="https://canalvalor.com/curso-online-jira-confluence/" target="_blank" class="memory">
+        <small>Agosto de 2023 - Agosto de 2023</small>
+        <h1>Curso: Jira e Confluence</h1>
+        <div>
+          <img src="assets\canal_valor.png" alt="Logo do CanalValor." />
+        </div>
+        <p>
+          <small> Oferecido por: Canal Valor. </small>
+        </p>
+      </a>
+      <div class="content">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" onclick="mostrarJiraConfluence(event)" />
+            <span class="slider"></span>
+          </label>
+          <h3>Conhecer o conteúdo</h3>
+        </div>
+        <section id="elemento-pai-jira-confluence"></section>
       </div>
     </nav>
   </body>
