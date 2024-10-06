@@ -368,7 +368,7 @@ iframe {
 
 aside {
   grid-area: profile;
-  background: linear-gradient(#00004f, #04003d, #05002c);
+  background: linear-gradient(#000061, #04003d, #05002c);
   display: flex;
   flex-direction: column;
   align-items: center;
