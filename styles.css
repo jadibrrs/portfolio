@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #8a67ff;
+  background-color: #bababa;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -148,11 +148,11 @@ nav div p a {
 
 .resumo_qualificacoes {
   padding: 16px;
-  border: solid 1px #0362d5;
+  border: solid 1px #79aeef;
   border-radius: 8px;
   display: grid;
   gap: 16px;
-  background: linear-gradient(to bottom, #6290c7, white);
+  background: linear-gradient(to bottom, #79aeef, white);
   color: white;
 }
 
