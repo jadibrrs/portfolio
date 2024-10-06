@@ -152,7 +152,7 @@ nav div p a {
   border-radius: 8px;
   display: grid;
   gap: 16px;
-  background: linear-gradient(to bottom, #137dff, white);
+  background: linear-gradient(to bottom, #6290c7, white);
   color: white;
 }
 
@@ -312,7 +312,6 @@ li {
   border-radius: 8px;
 }
 
-
 .modal {
   display: none;
   position: fixed;
@@ -369,7 +368,7 @@ iframe {
 
 aside {
   grid-area: profile;
-  background: #001632;
+  background: linear-gradient(#00004f, #04003d, #05002c);
   display: flex;
   flex-direction: column;
   align-items: center;
