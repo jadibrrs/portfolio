@@ -12,7 +12,7 @@ function toggleContent(elementId, content) {
 
 // Experiência
 function mostrarAgenda(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
     toggleContent(
       "elemento-pai-agenda",
@@ -27,12 +27,12 @@ function mostrarAgenda(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-agenda", "") // Esconde o conteúdo se desmarcado
+    toggleContent("elemento-pai-agenda", "")
   }
 }
 
 function mostrarEstagio(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
     toggleContent(
       "elemento-pai-estagio",
@@ -50,7 +50,7 @@ function mostrarEstagio(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-agenda", "") // Esconde o conteúdo se desmarcado
+    toggleContent("elemento-pai-estagio", "") // Esconde o conteúdo se desmarcado
   }
 }
 
@@ -209,7 +209,7 @@ function mostrarProz(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-proz", "") // Esconde o conteúdo se desmarcado
+    toggleContent("elemento-pai-proz", "")
   }
 }
 
