@@ -64,7 +64,7 @@ nav {
 }
 
 .redes {
-  gap: 0;
+  gap: 2px;
 }
 .rede,
 .redes {
@@ -77,11 +77,12 @@ nav {
 }
 
 .rede {
-  padding: 0 px 0 px;
-  border-radius: 8px;
+  gap: 1px;
+}
+
+.rede a {
+  padding-top: 8px;
   justify-content: center;
-  text-align: center;
-  gap: 2px;
 }
 
 nav div a {
@@ -129,8 +130,8 @@ nav div p {
 
 nav button {
   border-radius: 8px;
-  background: linear-gradient(#004faf, #002c62);
-  width: 350px;
+  background: linear-gradient(#004faf, #001834);
+  width: 150px;
   max-height: 40px;
   font-size: 16px;
   font-weight: 600;
@@ -138,7 +139,6 @@ nav button {
   padding: 8px;
   border-radius: 8px;
   display: block;
-  justify-content: center;
   margin: 0 0 16px 0;
 }
 
@@ -239,11 +239,10 @@ li {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   text-decoration: none;
 }
 
-.memory small {
+.memory small, .projeto small {
   color: rgb(133, 137, 138);
   font-size: 0.75rem;
 }
@@ -406,6 +405,33 @@ aside p small {
   font-size: 1rem;
 }
 
+small.tag {
+  padding: 6px;
+  border-radius: 8px;
+  margin: 0 12px 0 0;
+  vertical-align: middle;
+}
+
+small.graduacao, small.programacao {
+    color: #431ce3;
+    border: solid 1px #431ce3;
+}
+
+small.programa, small.automacao, small.junior {
+  color: #0073ff;
+  border: solid 1px #0073ff;
+}
+
+small.curso {
+  color: #144b8e;
+  border: solid 1px #144b8e;
+}
+
+small.bootcamp, small.planejamento, small.estagio {
+  color: #04003d;
+  border: solid 1px #04003d;
+}
+
 @media (max-width: 1080px) {
   :root {
     font-size: 14px;
@@ -443,5 +469,9 @@ aside p small {
     padding: 10px 2px 10px 2px;
     text-align: left;
     font-size: 16px;
+  }
+
+  aside {
+    gap: 8px;
   }
 }
