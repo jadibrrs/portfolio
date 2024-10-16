@@ -212,30 +212,3 @@ function mostrarProz(event) {
     toggleContent("elemento-pai-proz", "")
   }
 }
-
-function mostrarJiraConfluence(event) {
-  const checkbox = event.target // O checkbox que foi clicado
-  if (checkbox.checked) {
-    toggleContent(
-      "elemento-pai-jira-confluence",
-      `
-      <ul>
-        <li>Jira para times ágeis;</li>
-        <li>Scrum e Kanban no Jira;</li>
-        <li>Configurando o Workflow no Jira;</li>
-        <li>Épicos, histórias e tarefas no Jira;</li>
-        <li>Estimativa e rastreamento do tempo no Jira;</li>
-        <li>Gerenciamento de testes com Zephyr no Jira;</li>
-        <li>Criando o Roadmap no Jira;</li>
-        <li>Criando consultas avançadas no Jira com JQL;</li>
-        <li>Relatórios no Jira;</li>
-        <li>Jira Portfolio (Advanced Roadmaps);</li>
-        <li>Começando com Confluence;</li>
-        <li>Utilizando Jira com Confluence.</li>
-      </ul>
-      `
-    )
-  } else {
-    toggleContent("elemento-pai-jira-confluence", "") // Esconde o conteúdo se desmarcado
-  }
-}
