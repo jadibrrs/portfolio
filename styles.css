@@ -458,16 +458,20 @@ small.bootcamp {
 
   aside {
     border-right: none;
-    padding: 32px 12px;
+    padding: 32px 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   nav {
     overflow-y: visible;
-    padding: 22px;
+    padding: 24px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 825px) {
   nav button {
     width: 100%;
     display: block;
@@ -481,4 +485,16 @@ small.bootcamp {
     text-align: left;
     font-size: 16px;
   }
+
+  aside {
+  grid-area: profile;
+  background: linear-gradient(#000061, #04003d, #05002c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  gap: 32px;
+  padding: 64px 16px;
+  border-right: solid 1px;
+}
 }
