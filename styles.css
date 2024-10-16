@@ -140,6 +140,7 @@ nav button {
   border-radius: 8px;
   display: block;
   margin: -12px 0 -12px 0;
+  cursor: pointer;
 }
 
 nav div p a {
@@ -224,9 +225,10 @@ ul {
   flex-wrap: wrap;
   width: 100%;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 18px;
   background-color: #dde5f0;
   border: solid 1px #002c62;
+  margin-bottom: 16px;
 }
 
 li {
@@ -414,7 +416,6 @@ aside p small {
 small.tag {
   padding: 6px;
   border-radius: 8px;
-  margin: 0;
   vertical-align: middle;
   width: fit-content;
 }
