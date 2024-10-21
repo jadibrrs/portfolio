@@ -21,17 +21,19 @@
   </head>
   <body>
     <aside>
-      <img
-        class="foto_perfil"
-        src="./assets/jadi_porfolio.jpg"
-        alt="Foto da Jadi"
-      />
+      <div class="cabeçalho-perfil">
+        <img
+          class="foto_perfil"
+          src="./assets/jadi_porfolio.jpg"
+          alt="Foto da Jadi"
+        />
 
-      <p>
-        <strong>JADI BARROS </strong>
-        <br />
-        <small>Analista de Testes e Qualidade de Software (QA)</small>
-      </p>
+        <p>
+          <strong>JADI BARROS </strong>
+          <br />
+          <small>Software QA Engineer</small>
+        </p>
+      </div>
 
       <div class="redes">
         <div class="rede">
@@ -59,6 +61,39 @@
           </a>
         </div>
       </div>
+
+      <img
+        src="./assets/menu.png"
+        alt="Ícone Menu"
+        class="menu-icone"
+        onclick="toggleMenu(event)"
+      />
+
+      <div id="menu-modal" class="menu-modal">
+        <div class="modal-content">
+          <span class="close" onclick="toggleMenu()">&times;</span>
+          <a href="./index.html">Home</a>
+          <a href="./experiencia.html">Experiência</a>
+          <a href="./formacao.html">Formação</a>
+          <a href="./projetos.html">Projetos</a>
+          <a href="./blog.html">Blog</a>
+
+          <div class="social-icons">
+            <a href="mailto:jbheliodoro@gmail.com" target="_blank">
+              <img src="./assets/email.png" width="25px" />
+            </a>
+            <a href="https://github.com/jadibrrs" target="_blank">
+              <img src="./assets/github.png" width="25px" />
+            </a>
+            <a href="https://www.instagram.com/jadibarros.qa/" target="_blank">
+              <img src="./assets/instagram.png" width="25px" />
+            </a>
+            <a href="https://www.linkedin.com/in/jadibarros/" target="_blank">
+              <img src="./assets/linkedin.png" width="25px" />
+            </a>
+          </div>
+        </div>
+      </div>
     </aside>
 
     <nav>
@@ -67,6 +102,7 @@
         <a href="./experiencia.html">Experiência</a>
         <a href="./formacao.html">Formação</a>
         <a href="./projetos.html">Projetos</a>
+        <a href="./blog.html">Blog</a>
       </div>
 
       <a

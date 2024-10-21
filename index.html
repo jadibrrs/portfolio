@@ -15,22 +15,25 @@
     <link rel="icon" type="image/png" href="./assets/Jadi.png" />
 
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
 
     <title>Jadi Barros | Portfólio</title>
   </head>
   <body>
     <aside>
-      <img
-        class="foto_perfil"
-        src="./assets/jadi_porfolio.jpg"
-        alt="Foto da Jadi"
-      />
+      <div class="cabeçalho-perfil">
+        <img
+          class="foto_perfil"
+          src="./assets/jadi_porfolio.jpg"
+          alt="Foto da Jadi"
+        />
 
-      <p>
-        <strong>JADI BARROS </strong>
-        <br />
-        <small>Analista de Testes e Qualidade de Software (QA)</small>
-      </p>
+        <p>
+          <strong>JADI BARROS </strong>
+          <br />
+          <small>Software QA Engineer</small>
+        </p>
+      </div>
 
       <div class="redes">
         <div class="rede">
@@ -58,6 +61,39 @@
           </a>
         </div>
       </div>
+
+      <img
+        src="./assets/menu.png"
+        alt="Ícone Menu"
+        class="menu-icone"
+        onclick="toggleMenu(event)"
+      />
+
+      <div id="menu-modal" class="menu-modal">
+        <div class="modal-content">
+          <span class="close" onclick="toggleMenu()">&times;</span>
+          <a href="./index.html">Home</a>
+          <a href="./experiencia.html">Experiência</a>
+          <a href="./formacao.html">Formação</a>
+          <a href="./projetos.html">Projetos</a>
+          <a href="./blog.html">Blog</a>
+
+          <div class="social-icons">
+            <a href="mailto:jbheliodoro@gmail.com" target="_blank">
+                <img src="./assets/email.png" width="25px" />
+              </a>
+              <a href="https://github.com/jadibrrs" target="_blank">
+                <img src="./assets/github.png" width="25px" />
+              </a>
+              <a href="https://www.instagram.com/jadibarros.qa/" target="_blank">
+                <img src="./assets/instagram.png" width="25px" />
+              </a>
+              <a href="https://www.linkedin.com/in/jadibarros/" target="_blank">
+                <img src="./assets/linkedin.png" width="25px" />
+              </a>
+          </div>
+        </div>
+      </div>
     </aside>
 
     <nav>
@@ -66,6 +102,7 @@
         <a href="./experiencia.html">Experiência</a>
         <a href="./formacao.html">Formação</a>
         <a href="./projetos.html">Projetos</a>
+        <a href="./blog.html">Blog</a>
       </div>
 
       <div class="sobre_mim">
@@ -92,17 +129,23 @@
             (SFPC)™.
           </p>
           <p><b>Metodologias ágeis:</b> Scrum e Kanban.</p>
-          <p><b>Linguagens de programação:</b> JavaScript, Python, Java e C#.</p>
+          <p>
+            <b>Linguagens de programação:</b> JavaScript, Python, Java e C#.
+          </p>
           <p><b>Banco de dados:</b> SQL e NoSQL.</p>
           <p><b>Automação de testes web e mobile:</b> Cypress.</p>
           <p><b>Testes manuais de API:</b> Postman.</p>
           <p><b>Idiomas:</b> Inglês intermediário (B1).</p>
           <p><b>Ferramentas:</b> Azure DevOps, Jira, Git, Github e Swagger.</p>
-          <br>
+          <br />
           <div>
             <img alt="Ícone Cypress" width="30" src="./assets/cypress.png" />
             <img alt="Ícone Postman" width="30" src="./assets/postman.svg" />
-            <img alt="Ícone JavaScript" width="30" src="./assets/javascript.svg" />
+            <img
+              alt="Ícone JavaScript"
+              width="30"
+              src="./assets/javascript.svg"
+            />
             <img alt="Ícone Python" width="30" src="./assets/python.webp" />
             <img alt="Ícone Java" width="30" src="./assets/java.png" />
             <img alt="Ícone C#" width="30" src="./assets/csharp.png" />
@@ -111,9 +154,17 @@
             <img alt="Ícone SQL" width="60" src="./assets/sql.png" />
             <img alt="Ícone MongoDB" width="25" src="./assets/mongodb.png" />
             <img alt="Ícone Git" width="30" src="./assets/git.png" />
-            <img alt="Ícone GitHub" width="30" src="./assets/github-preto.png">
+            <img
+              alt="Ícone GitHub"
+              width="30"
+              src="./assets/github-preto.png"
+            />
             <img alt="Ícone Jira" width="30" src="./assets/jira.png" />
-            <img alt="Ícone Confluence" width="25" src="./assets/confluence.png" />
+            <img
+              alt="Ícone Confluence"
+              width="25"
+              src="./assets/confluence.png"
+            />
             <img alt="Ícone Azure" width="25" src="./assets/azure.png" />
             <img alt="Ícone Swagger" width="25" src="./assets/swagger.png" />
           </div>

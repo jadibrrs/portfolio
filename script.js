@@ -1,3 +1,23 @@
+// Função para abrir e fechar o modal
+function toggleMenu() {
+  const modal = document.getElementById("menu-modal")
+
+  // Alterna entre abrir e fechar o modal
+  if (modal.style.display === "flex") {
+    modal.style.display = "none" // Fecha o modal
+  } else {
+    modal.style.display = "flex" // Abre o modal
+  }
+}
+
+// Função para fechar o modal quando clicar fora dele
+window.onclick = function (event) {
+  const modal = document.getElementById("menu-modal")
+  if (event.target === modal) {
+    modal.style.display = "none" // Fecha o modal ao clicar fora da área do modal
+  }
+}
+
 function toggleContent(elementId, content) {
   const element = document.getElementById(elementId)
 
