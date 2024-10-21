@@ -265,7 +265,7 @@ li {
   height: 280px;
   object-fit: cover;
   border-radius: 8px;
-  border: solid 1px #afc8e7;
+  border: solid 1px #dfe6ee;
   transition: transform 0.3s ease-in-out;
 }
 
