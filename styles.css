@@ -501,29 +501,45 @@ footer {
   padding: 8px 64px 64px 64px;
 }
 
+footer div {
+  display: flex; /* Para garantir que o botão ocupe a linha toda e se alinhe à direita */
+  justify-content: flex-end; /* Empurra o botão para o final (direita) */
+}
+
 .btnTopo {
   border: none;
   border-radius: 8px;
   color: #eaeaea;
-  background: linear-gradient(#909090, #333);
+  background: linear-gradient(#141436, #010f1f);
   width: 150px;
   height: 50px;
   font-size: 16px;
   font-weight: 600;
   padding: 8px;
   display: block;
-  margin: -12px 0 -12px 0;
+  margin: -12px 0;
   cursor: pointer;
 }
 
-@media (max-width: 825px) {
-  main button {
-    width: 100%;
-    display: block;
-    max-height: none;
-    margin: 0 0 16px 0;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px; /* Espaçamento entre os itens */
+}
 
+.item {
+  background-color: #dde5ee;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100px; /* Defina a altura desejada */
+  border-radius: 8px;
+}
+
+@media (max-width: 825px) {
   li {
     color: #002c62;
     padding: 10px 2px 10px 2px;
