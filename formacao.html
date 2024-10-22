@@ -124,12 +124,12 @@
           <label class="toggle-switch">
             <input
               type="checkbox"
-              id="toggle-atividade"
+              id="toggle-vincit"
               onclick="mostrarVincit(event)"
             />
             <span class="slider"></span>
           </label>
-          <h3>Ver conteúdo</h3>
+          <label for="toggle-vincit"><b>Ver conteúdo</b></label>
         </div>
         <section id="elemento-pai-vincit"></section>
         <small class="tag graduacao"><b>Graduação</b></small>
@@ -155,10 +155,14 @@
       <div class="content">
         <div class="toggle-container">
           <label class="toggle-switch">
-            <input type="checkbox" onclick="mostrarMentoria(event)" />
+            <input
+              type="checkbox"
+              id="toggle-mentoria"
+              onclick="mostrarMentoria(event)"
+            />
             <span class="slider"></span>
           </label>
-          <h3>Ver conteúdo</h3>
+          <label for="toggle-mentoria"><b>Ver conteúdo</b></label>
         </div>
         <section id="elemento-pai-mentoria"></section>
         <small class="tag programa"><b>Programa</b></small>
@@ -181,10 +185,10 @@
       <div class="content">
         <div class="toggle-container">
           <label class="toggle-switch">
-            <input type="checkbox" onclick="mostrarTAT(event)" />
+            <input type="checkbox" id="toggle-tat" onclick="mostrarTAT(event)" />
             <span class="slider"></span>
           </label>
-          <h3>Ver conteúdo</h3>
+          <label for="toggle-tat"><b>Ver conteúdo</b></label>
         </div>
         <section id="elemento-pai-tat"></section>
         <small class="tag curso"><b>Curso</b></small>
@@ -207,10 +211,10 @@
       <div class="content">
         <div class="toggle-container">
           <label class="toggle-switch">
-            <input type="checkbox" onclick="mostrarAtlantico(event)" />
+            <input type="checkbox" id="toggle-bootcamp" onclick="mostrarAtlantico(event)" />
             <span class="slider"></span>
           </label>
-          <h3>Ver conteúdo</h3>
+          <label for="toggle-bootcamp"><b>Ver conteúdo</b></label>
         </div>
         <section id="elemento-pai-atlantico"></section>
         <small class="tag bootcamp"><b>Bootcamp</b></small>
@@ -232,10 +236,10 @@
       <div class="content">
         <div class="toggle-container">
           <label class="toggle-switch">
-            <input type="checkbox" onclick="mostrarQa(event)" />
+            <input type="checkbox" id="toggle-qa" onclick="mostrarQa(event)" />
             <span class="slider"></span>
           </label>
-          <h3>Ver conteúdo</h3>
+          <label for="toggle-qa"><b>Ver conteúdo</b></label>
         </div>
         <section id="elemento-pai-qa"></section>
         <small class="tag programa"><b>Programa</b></small>
@@ -260,10 +264,10 @@
       <div class="content">
         <div class="toggle-container">
           <label class="toggle-switch">
-            <input type="checkbox" onclick="mostrarProz(event)" />
+            <input type="checkbox" id="toggle-proz" onclick="mostrarProz(event)" />
             <span class="slider"></span>
           </label>
-          <h3>Ver conteúdo</h3>
+          <label for="toggle-proz"><b>Ver conteúdo</b></label>
         </div>
         <section id="elemento-pai-proz"></section>
         <small class="tag curso"><b>Curso</b></small>
@@ -271,7 +275,9 @@
     </main>
     <footer>
       <div>
-        <button id="btnTopo" class="btnTopo" title="Voltar ao topo">⬆ Voltar ao topo</button>
+        <button id="btnTopo" class="btnTopo" title="Voltar ao topo">
+          ⬆ Voltar ao topo
+        </button>
       </div>
     </footer>
   </body>

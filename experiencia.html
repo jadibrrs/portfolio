@@ -121,10 +121,10 @@
       <div class="content">
         <div class="toggle-container">
           <label class="toggle-switch">
-            <input type="checkbox" onclick="mostrarAgenda(event)" />
+            <input type="checkbox" id="toggle-agenda" onclick="mostrarAgenda(event)" />
             <span class="slider"></span>
           </label>
-          <h3>Ver atividades</h3>
+          <label for="toggle-agenda"><b>Ver atividades</b></label>
         </div>
         <section id="elemento-pai-agenda"></section>
         <small class="tag senioridade"><b>Júnior</b></small>
@@ -146,10 +146,10 @@
       <div class="content">
         <div class="toggle-container">
           <label class="toggle-switch">
-            <input type="checkbox" onclick="mostrarEstagio(event)" />
+            <input type="checkbox" id="toggle-estagio" onclick="mostrarEstagio(event)" />
             <span class="slider"></span>
           </label>
-          <h3>Ver atividades</h3>
+          <label for="toggle-estagio"><b>Ver atividades</b></label>
         </div>
         <section id="elemento-pai-estagio"></section>
         <small class="tag senioridade"><b>Estágio</b></small>
