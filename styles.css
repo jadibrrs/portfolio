@@ -130,8 +130,14 @@ main div p {
   margin: 16px 0 48px 0;
 }
 
-.modal-content a:hover {
-  background-color: #d4dae0;
+.modal-content a:hover,
+.rede:hover {
+  background-color: #2273bb;
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  color: #2273bb;
 }
 
 main button {
