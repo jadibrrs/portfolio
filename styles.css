@@ -39,15 +39,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 160%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.8fr;
   grid-template-areas:
     "profile"
     "timeline";
   overflow-y: visible;
 }
 
-nav {
+main {
   padding: 32px 64px;
   grid-area: timeline;
 
@@ -86,7 +84,7 @@ nav {
   justify-content: center;
 }
 
-nav div a {
+main div a {
   text-decoration: none;
   color: #02234a;
   padding: 16px;
@@ -113,18 +111,18 @@ nav div a {
   width: auto;
 }
 
-nav div h1,
-nav div h2,
-nav div p {
+main div h1,
+main div h2,
+main div p {
   color: #02234a;
   font-size: 2rem;
 }
 
-nav div h2 {
+main div h2 {
   font-size: 1.6rem;
 }
 
-nav div p {
+main div p {
   font-size: 1.2rem;
 }
 
@@ -132,7 +130,7 @@ nav div p {
   margin: 16px 0 48px 0;
 }
 
-nav button {
+main button {
   border-radius: 8px;
   background: linear-gradient(#004faf, #001834);
   width: 150px;
@@ -147,7 +145,7 @@ nav button {
   cursor: pointer;
 }
 
-nav div p a {
+main div p a {
   padding: 0;
 }
 
@@ -293,7 +291,7 @@ li {
 .projeto {
   display: flex;
   flex-direction: column;
-  margin-bottom: 64px;
+  margin-top: 64px;
   text-decoration: none;
 }
 
@@ -347,7 +345,7 @@ iframe {
   cursor: pointer;
 }
 
-aside {
+header {
   grid-area: profile;
   background: linear-gradient(#000061, #04003d, #05002c);
   display: flex;
@@ -364,15 +362,15 @@ aside {
   justify-content: space-between;
 }
 
-aside * {
+header * {
   animation: entering 0.7s ease-in-out;
 }
 
-aside div div a {
+header div div a {
   text-decoration: none;
 }
 
-aside .foto_perfil {
+header .foto_perfil {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -380,7 +378,7 @@ aside .foto_perfil {
   background: linear-gradient(270deg, #ffffff, #eaeaea) border-box;
 }
 
-aside p {
+header p {
   font-size: 1.7rem;
   color: #ffffff;
   padding: 16px;
@@ -388,7 +386,7 @@ aside p {
   text-align: left;
   text-shadow: black;
 }
-aside p small {
+header p small {
   font-size: 1rem;
 }
 
@@ -421,7 +419,7 @@ small.curso {
   border: solid 1px #144b8e;
 }
 
-small.bootcamp {
+small.bootcamp, small.ferramenta {
   color: #04003d;
   border: solid 1px #04003d;
 }
@@ -480,8 +478,8 @@ small.bootcamp {
 }
 
 .img-em-construcao {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .em-construcao {
@@ -490,8 +488,35 @@ small.bootcamp {
   justify-content: center;
 }
 
+footer {
+  padding: 8px 64px 64px 64px;
+}
+
+.btnTopo {
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  color: #eaeaea;
+  color: #eaeaea;
+  background: linear-gradient(#909090, #333);
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #eaeaea;
+  padding: 8px;
+  border-radius: 8px;
+  display: block;
+  margin: -12px 0 -12px 0;
+  cursor: pointer;
+}
+
 @media (max-width: 825px) {
-  nav button {
+  main button {
     width: 100%;
     display: block;
     max-height: none;
@@ -505,7 +530,7 @@ small.bootcamp {
     font-size: 16px;
   }
 
-  aside {
+  header {
     grid-area: profile;
     background: linear-gradient(#000061, #04003d, #05002c);
     display: flex;
@@ -516,7 +541,7 @@ small.bootcamp {
     border-right: solid 1px;
   }
 
-  nav {
+  main {
     padding: 24px;
   }
 
@@ -538,11 +563,11 @@ small.bootcamp {
     cursor: pointer;
   }
 
-  aside p {
+  header p {
     font-size: 16px;
   }
 
-  aside p strong {
+  header p strong {
     font-size: 18px;
   }
 

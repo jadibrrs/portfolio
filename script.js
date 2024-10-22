@@ -18,6 +18,11 @@ window.onclick = function (event) {
   }
 }
 
+// Ao clicar no botão, a página rola suavemente para o topo
+document.getElementById("btnTopo").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" })
+}
+
 function toggleContent(elementId, content) {
   const element = document.getElementById(elementId)
 
