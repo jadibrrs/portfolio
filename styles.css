@@ -419,7 +419,8 @@ small.curso {
   border: solid 1px #144b8e;
 }
 
-small.bootcamp, small.ferramenta {
+small.bootcamp,
+small.ferramenta {
   color: #04003d;
   border: solid 1px #04003d;
 }
@@ -542,7 +543,11 @@ footer {
   }
 
   main {
-    padding: 24px;
+    padding: 0 24px 24px 24px;
+  }
+
+  footer {
+    padding: 24px 24px 64px 24px;
   }
 
   img.foto_perfil {
