@@ -154,6 +154,10 @@ main button {
   cursor: pointer;
 }
 
+main button:hover {
+  background: linear-gradient(#004498, #001227);
+}
+
 main div p a {
   padding: 0;
 }
@@ -511,7 +515,7 @@ footer div {
   border: none;
   border-radius: 8px;
   color: #eaeaea;
-  background: linear-gradient(#141436, #010f1f);
+  background: linear-gradient(#16163c, #010f1f);
   width: 150px;
   height: 50px;
   font-size: 16px;
@@ -520,6 +524,10 @@ footer div {
   display: block;
   margin: -12px 0;
   cursor: pointer;
+}
+
+.btnTopo:hover {
+  background: linear-gradient(#12122e, #010a14);
 }
 
 .grid {
