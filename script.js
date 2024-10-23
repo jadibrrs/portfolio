@@ -43,11 +43,14 @@ function mostrarAgenda(event) {
       "elemento-pai-agenda",
       `
       <ul>
-        <li>Elaboração e execução de testes manuais em sistemas web;</li>
-        <li>Desenvolvimento e gestão de testes automatizados;</li>
-        <li>Identificação, documentação e gerenciamento de defeitos;</li>
-        <li>Análise e levantamento de requisitos e especificações;</li>
-        <li>Colaboração com desenvolvedores para explicação de tarefas e ajustes de incidentes.</li>
+        <li>Planejar, criar e executar testes manuais em aplicações web;</li>
+        <li>Desenvolver e manter scripts de testes de integração automatizados;</li>
+        <li>Participar das reuniões de planejamento para entender as funcionalidades e contribuir com a perspectiva de qualidade;</li>
+        <li>Colaborar com desenvolvedores e outros membros do time para identificar, relatar e acompanhar a resolução de bugs;</li>
+        <li>Garantir que todas as entregas sigam os padrões de qualidade estabelecidos antes de serem liberadas para o ambiente de produção;</li>
+        <li>Ajudar a identificar melhorias nos processos de desenvolvimento e qualidade;</li>
+        <li>Garantir a cobertura de testes adequada para minimizar falhas em produção;</li>
+        <li>Documentar os casos de teste e criar relatórios de bugs.</li>
       </ul>
       `
     )
@@ -55,6 +58,11 @@ function mostrarAgenda(event) {
     toggleContent("elemento-pai-agenda", "")
   }
 }
+        // <li>Elaboração e execução de testes manuais em sistemas web;</li>
+        // <li>Desenvolvimento e gestão de testes automatizados;</li>
+        // <li>Identificação, documentação e gerenciamento de defeitos;</li>
+        // <li>Análise e levantamento de requisitos e especificações;</li>
+        // <li>Colaboração com desenvolvedores para explicação de tarefas e ajustes de incidentes.</li>
 
 function mostrarEstagio(event) {
   const checkbox = event.target
@@ -63,14 +71,12 @@ function mostrarEstagio(event) {
       "elemento-pai-estagio",
       `
       <ul>
-        <li>Experiência com as metodologias Scrum e Kanban;</li>
-        <li>Documentação de projetos de sistemas;</li>
-        <li>Análise de requisitos e especificações;</li>
-        <li>Elaboração e execução de testes manuais funcionais em sistemas web;</li>
-        <li>Identificação, documentação e rastreamento de defeitos;</li>
-        <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas e bugs;</li>
+        <li>Planejar, criar e executar testes manuais em aplicações web;</li>
+        <li>Colaborar com desenvolvedores e outros membros do time para identificar, relatar e acompanhar a resolução de bugs;</li>
+        <li>Garantir que todas as entregas sigam os padrões de qualidade estabelecidos antes de serem liberadas para o ambiente de produção;</li>
         <li>Prototipação de funcionalidades;</li>
-        <li>Participação em reuniões de equipe para discussão de progresso e metas.</li>
+        <li>Documentação de sistemas;</li>
+        <li>Análise de requisitos e especificações.</li>
       </ul>
       `
     )
@@ -78,6 +84,14 @@ function mostrarEstagio(event) {
     toggleContent("elemento-pai-estagio", "") // Esconde o conteúdo se desmarcado
   }
 }
+        // <li>Experiência com as metodologias Scrum e Kanban;</li>
+        // <li>Documentação de projetos de sistemas;</li>
+        // <li>Análise de requisitos e especificações;</li>
+        // <li>Elaboração e execução de testes manuais funcionais em sistemas web;</li>
+        // <li>Identificação, documentação e rastreamento de defeitos;</li>
+        // <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas e bugs;</li>
+        // <li>Prototipação de funcionalidades;</li>
+        // <li>Participação em reuniões de equipe para discussão de progresso e metas.</li>
 
 // Formação
 function mostrarVincit(event) {
