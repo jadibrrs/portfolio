@@ -133,6 +133,7 @@ main div p {
 .modal-content a:hover,
 .rede:hover {
   background-color: #2273bb;
+  color: #eaeaea;
   border-radius: 8px;
 }
 
