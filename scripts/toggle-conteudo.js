@@ -1,29 +1,4 @@
-// Função para abrir e fechar o modal
-function toggleMenu() {
-  const modal = document.getElementById("menu-modal")
-
-  // Alterna entre abrir e fechar o modal
-  if (modal.style.display === "flex") {
-    modal.style.display = "none" // Fecha o modal
-  } else {
-    modal.style.display = "flex" // Abre o modal
-  }
-}
-
-// Função para fechar o modal quando clicar fora dele
-window.onclick = function (event) {
-  const modal = document.getElementById("menu-modal")
-  if (event.target === modal) {
-    modal.style.display = "none" // Fecha o modal ao clicar fora da área do modal
-  }
-}
-
-// Ao clicar no botão, a página rola suavemente para o topo
-document.getElementById("btnTopo").onclick = function () {
-  window.scrollTo({ top: 0, behavior: "smooth" })
-}
-
-function toggleContent(elementId, content) {
+function toggleConteudo(elementId, content) {
   const element = document.getElementById(elementId)
 
   if (element.style.display === "none" || !element.innerHTML.trim()) {
@@ -35,11 +10,11 @@ function toggleContent(elementId, content) {
   }
 }
 
-// Experiência
+// EXPERIÊNCIA //
 function mostrarAgenda(event) {
   const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-agenda",
       `
       <ul>
@@ -55,19 +30,19 @@ function mostrarAgenda(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-agenda", "")
+    toggleConteudo("elemento-pai-agenda", "")
   }
 }
-        // <li>Elaboração e execução de testes manuais em sistemas web;</li>
-        // <li>Desenvolvimento e gestão de testes automatizados;</li>
-        // <li>Identificação, documentação e gerenciamento de defeitos;</li>
-        // <li>Análise e levantamento de requisitos e especificações;</li>
-        // <li>Colaboração com desenvolvedores para explicação de tarefas e ajustes de incidentes.</li>
+// <li>Elaboração e execução de testes manuais em sistemas web;</li>
+// <li>Desenvolvimento e gestão de testes automatizados;</li>
+// <li>Identificação, documentação e gerenciamento de defeitos;</li>
+// <li>Análise e levantamento de requisitos e especificações;</li>
+// <li>Colaboração com desenvolvedores para explicação de tarefas e ajustes de incidentes.</li>
 
 function mostrarEstagio(event) {
   const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-estagio",
       `
       <ul>
@@ -81,23 +56,23 @@ function mostrarEstagio(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-estagio", "") // Esconde o conteúdo se desmarcado
+    toggleConteudo("elemento-pai-estagio", "")
   }
 }
-        // <li>Experiência com as metodologias Scrum e Kanban;</li>
-        // <li>Documentação de projetos de sistemas;</li>
-        // <li>Análise de requisitos e especificações;</li>
-        // <li>Elaboração e execução de testes manuais funcionais em sistemas web;</li>
-        // <li>Identificação, documentação e rastreamento de defeitos;</li>
-        // <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas e bugs;</li>
-        // <li>Prototipação de funcionalidades;</li>
-        // <li>Participação em reuniões de equipe para discussão de progresso e metas.</li>
+// <li>Experiência com as metodologias Scrum e Kanban;</li>
+// <li>Documentação de projetos de sistemas;</li>
+// <li>Análise de requisitos e especificações;</li>
+// <li>Elaboração e execução de testes manuais funcionais em sistemas web;</li>
+// <li>Identificação, documentação e rastreamento de defeitos;</li>
+// <li>Colaboração com desenvolvedores para ajustes e explicação de tarefas e bugs;</li>
+// <li>Prototipação de funcionalidades;</li>
+// <li>Participação em reuniões de equipe para discussão de progresso e metas.</li>
 
-// Formação
+// FORMAÇÃO //
 function mostrarVincit(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-vincit",
       `
       <ul>
@@ -130,14 +105,14 @@ function mostrarVincit(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-vincit", "") // Esconde o conteúdo se desmarcado
+    toggleConteudo("elemento-pai-vincit", "")
   }
 }
 
 function mostrarMentoria(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-mentoria",
       `
       <ul>
@@ -161,14 +136,14 @@ function mostrarMentoria(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-mentoria", "") // Esconde o conteúdo se desmarcado
+    toggleConteudo("elemento-pai-mentoria", "")
   }
 }
 
 function mostrarTAT(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-tat",
       `
       <ul>
@@ -187,14 +162,14 @@ function mostrarTAT(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-tat", "") // Esconde o conteúdo se desmarcado
+    toggleConteudo("elemento-pai-tat", "")
   }
 }
 
 function mostrarAtlantico(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-atlantico",
       `
       <ul>
@@ -205,14 +180,14 @@ function mostrarAtlantico(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-atlantico", "") // Esconde o conteúdo se desmarcado
+    toggleConteudo("elemento-pai-atlantico", "")
   }
 }
 
 function mostrarQa(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-qa",
       `
       <ul>
@@ -227,14 +202,14 @@ function mostrarQa(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-qa", "") // Esconde o conteúdo se desmarcado
+    toggleConteudo("elemento-pai-qa", "")
   }
 }
 
 function mostrarProz(event) {
-  const checkbox = event.target // O checkbox que foi clicado
+  const checkbox = event.target
   if (checkbox.checked) {
-    toggleContent(
+    toggleConteudo(
       "elemento-pai-proz",
       `
       <ul>
@@ -248,6 +223,6 @@ function mostrarProz(event) {
       `
     )
   } else {
-    toggleContent("elemento-pai-proz", "")
+    toggleConteudo("elemento-pai-proz", "")
   }
 }

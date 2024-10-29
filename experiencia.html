@@ -13,19 +13,19 @@
     />
 
     <link rel="icon" type="image/png" href="./assets/foto-aba-navegador.jpg" />
+
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+
+    <script src="./scripts/modal-menu.js" defer></script>
+    <script src="./scripts/toggle-conteudo.js" defer></script>
+    <script src="./scripts/btn-topo.js" defer></script>
 
     <title>Jadi Barros | Portfólio</title>
   </head>
   <body>
     <header>
       <div class="cabeçalho-perfil">
-        <img
-          class="foto_perfil"
-          src="./assets/logo.jpg"
-          alt="Foto da Jadi"
-        />
+        <img class="foto_perfil" src="./assets/logo.jpg" alt="Foto da Jadi" />
 
         <p>
           <strong>JADI BARROS </strong>
@@ -65,12 +65,12 @@
         src="./assets/menu.png"
         alt="Ícone Menu"
         class="menu-icone"
-        onclick="toggleMenu(event)"
+        onclick="modalMenu(event)"
       />
 
       <div id="menu-modal" class="menu-modal">
         <div class="modal-content">
-          <span class="close" onclick="toggleMenu()">&times;</span>
+          <span class="close" onclick="modalMenu()">&times;</span>
           <a href="./index.html">Home</a>
           <a href="./experiencia.html">Experiência</a>
           <a href="./formacao.html">Formação</a>
