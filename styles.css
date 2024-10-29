@@ -511,6 +511,85 @@ footer div {
   justify-content: flex-end; /* Empurra o botão para o final (direita) */
 }
 
+.container-filtro {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0 10px 20px;
+  position: relative;
+}
+
+.botao-filtro {
+  padding: 10px 15px;
+  width: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtrar {
+  width: 20px;
+}
+
+/* Estilos para o modal */
+.modal-filtro {
+  display: none;
+  position: absolute;
+  top: 100%; /* para posicionar abaixo do botão */
+  right: 0; /* alinhar com o botão */
+  width: 300px;
+  padding: 24px 24px 32px 24px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 5px;
+  gap: 16px;
+}
+
+.opcoes-filtro h4 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  gap: 64px;
+}
+
+.categoria {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.opcao {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  border-radius: 3px;
+  color: #007bff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.opcao.selecionado {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#botaoAplicarFiltro {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .btnTopo {
   border: none;
   border-radius: 8px;

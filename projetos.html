@@ -19,6 +19,7 @@
     <script src="./scripts/modal-menu.js" defer></script>
     <script src="./scripts/toggle-conteudo.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
+    <script src="./scripts/btn-filtro-projetos.js" defer></script>
 
     <title>Jadi Barros | Portfólio</title>
   </head>
@@ -102,6 +103,35 @@
         <a href="./formacao.html">Formação</a>
         <a href="./projetos.html">Projetos</a>
         <a href="./blog.html">Blog</a>
+      </div>
+
+      <div class="container-filtro">
+        <button id="botaoFiltro" class="botao-filtro">
+          <img src="./assets/filtro.png" alt="" class="filtrar" />
+        </button>
+        <div id="modalFiltro" class="modal-filtro">
+          <h3>Filtrar</h3>
+          <div class="opcoes-filtro">
+            <h4>Atividade:</h4>
+            <div class="categoria">
+              <span class="opcao" data-valor="Automação">Automação</span>
+              <span class="opcao" data-valor="Programação">Programação</span>
+            </div>
+
+            <h4>Ferramenta:</h4>
+            <div class="categoria">
+              <span class="opcao" data-valor="Cypress">Cypress</span>
+            </div>
+
+            <h4>Linguagem de Programação:</h4>
+            <div class="categoria">
+              <span class="opcao" data-valor="JavaScript">JavaScript</span>
+              <span class="opcao" data-valor="Python">Python</span>
+            </div>
+
+            <button id="botaoAplicarFiltro">Aplicar Filtro</button>
+          </div>
+        </div>
       </div>
 
       <div class="projeto">
