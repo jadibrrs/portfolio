@@ -96,8 +96,8 @@ main div a {
 .menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
-  background: linear-gradient(#0d0d5a, #04003c, #06012f);
+  margin: -32px -64px 40px -64px;
+  background: linear-gradient(#09093e, #060329, #040121);
   border: #131011;
   gap: 16px;
 }
@@ -145,7 +145,7 @@ main button {
   border-radius: 8px;
   background: linear-gradient(#2087e0, #003470);
   width: 120px;
-  height: 50px;
+  height: 44px;
   font-size: 16px;
   font-weight: 600;
   color: #eaeaea;
