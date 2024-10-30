@@ -301,16 +301,23 @@ li {
   display: none;
 }
 
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 32px;
+}
+
 .projeto {
   display: flex;
   flex-direction: column;
-  margin-bottom: 48px;
   text-decoration: none;
 }
 
 .container {
   position: relative;
   width: 100%;
+  max-width: 1000px;
+  max-height: 450px;
   overflow: hidden;
 }
 
