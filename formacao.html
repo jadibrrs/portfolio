@@ -19,6 +19,7 @@
     <script src="./scripts/modal-menu.js" defer></script>
     <script src="./scripts/toggle-conteudo.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
+    <script src="./scripts/btn-filtro-formacao.js" defer></script>
 
     <title>Jadi Barros | Portfólio</title>
   </head>
@@ -104,132 +105,168 @@
         <a href="./blog.html">Blog</a>
       </div>
 
-      <a
-        href="https://www.faculdadevincit.edu.br/"
-        target="_blank"
-        class="memory"
-      >
-        <small>Junho de 2023 - Atualmente</small>
-        <h1>Tecnologia em Análise e Desenvolvimento de Sistemas</h1>
-        <div>
-          <img src="./assets/vincit.png" />
+      <div class="container-filtro">
+        <div class="titulo-e-filtro">
+          <h1>Formação</h1>
+          <button id="botaoFiltro" class="botao-filtro">
+            <img src="./assets/filtro.png" alt="" class="filtrar" />
+          </button>
         </div>
-        <p>
-          <small> Oferecido por: Faculdade Vincit. </small>
-        </p>
-      </a>
-      <div class="content">
-        <div class="toggle-container">
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              id="toggle-vincit"
-              onclick="mostrarVincit(event)"
-            />
-            <span class="slider"></span>
-          </label>
-          <label for="toggle-vincit"><b>Ver conteúdo</b></label>
+        <div id="modalFiltro" class="modal-filtro">
+          <h3>Filtrar</h3>
+          <div class="opcoes-filtro">
+            <h4>Acadêmicas:</h4>
+            <div class="categoria">
+              <span class="opcao" data-valor="Graduação">Graduação</span>
+            </div>
+
+            <h4>Não acadêmicas:</h4>
+            <div class="categoria">
+              <span class="opcao" data-valor="Bootcamp">Bootcamp</span>
+              <span class="opcao" data-valor="Curso">Curso</span>
+              <span class="opcao" data-valor="Programa">Programa</span>
+            </div>
+
+            <button id="botaoAplicarFiltro">Aplicar Filtro</button>
+          </div>
         </div>
-        <section id="elemento-pai-vincit"></section>
-        <small class="tag graduacao"><b>Graduação</b></small>
       </div>
 
-      <a
-        href="https://www.juliodelima.com.br/mentoria/"
-        target="_blank"
-        class="memory"
-      >
-        <small>Abril de 2024 - Atualmente</small>
-        <h1>Mentoria em Testes de Software com Júlio de Lima</h1>
-        <div>
-          <img src="./assets/mentoria.png" />
+      <div class="formacao">
+        <a
+          href="https://www.faculdadevincit.edu.br/"
+          target="_blank"
+          class="memory"
+        >
+          <small>Junho de 2023 - Atualmente</small>
+          <h2>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
+          <div>
+            <img src="./assets/vincit.png" />
+          </div>
+          <p>
+            <small> Oferecido por: Faculdade Vincit. </small>
+          </p>
+        </a>
+        <div class="content">
+          <div class="toggle-container">
+            <label class="toggle-switch">
+              <input
+                type="checkbox"
+                id="toggle-vincit"
+                onclick="mostrarVincit(event)"
+              />
+              <span class="slider"></span>
+            </label>
+            <label for="toggle-vincit"><b>Ver conteúdo</b></label>
+          </div>
+          <section id="elemento-pai-vincit"></section>
+          <small class="tag graduacao"><b>Graduação</b></small>
         </div>
-        <p>
-          <small>
-            Oferecido por: Júlio de Lima Consultoria e Treinamentos de Testes de
-            Software.
-          </small>
-        </p>
-      </a>
-      <div class="content">
-        <div class="toggle-container">
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              id="toggle-mentoria"
-              onclick="mostrarMentoria(event)"
-            />
-            <span class="slider"></span>
-          </label>
-          <label for="toggle-mentoria"><b>Ver conteúdo</b></label>
-        </div>
-        <section id="elemento-pai-mentoria"></section>
-        <small class="tag programa"><b>Programa</b></small>
       </div>
 
-      <a
-        href="https://www.udemy.com/course/testes-automatizados-com-cypress-basico/"
-        target="_blank"
-        class="memory"
-      >
-        <small>Janeiro de 2024 - Janeiro de 2024</small>
-        <h1>Testes automatizados com Cypress - Básico</h1>
-        <div>
-          <img src="./assets/tat.png" />
+      <div class="formacao">
+        <a
+          href="https://www.juliodelima.com.br/mentoria/"
+          target="_blank"
+          class="memory"
+        >
+          <small>Abril de 2024 - Atualmente</small>
+          <h2>Mentoria em Testes de Software com Júlio de Lima</h2>
+          <div>
+            <img src="./assets/mentoria.png" />
+          </div>
+          <p>
+            <small>
+              Oferecido por: Júlio de Lima Consultoria e Treinamentos de Testes de
+              Software.
+            </small>
+          </p>
+        </a>
+        <div class="content">
+          <div class="toggle-container">
+            <label class="toggle-switch">
+              <input
+                type="checkbox"
+                id="toggle-mentoria"
+                onclick="mostrarMentoria(event)"
+              />
+              <span class="slider"></span>
+            </label>
+            <label for="toggle-mentoria"><b>Ver conteúdo</b></label>
+          </div>
+          <section id="elemento-pai-mentoria"></section>
+          <small class="tag programa"><b>Programa</b></small>
         </div>
-        <p>
-          <small> Oferecido por: Talking About Testing (TAT). </small>
-        </p>
-      </a>
-      <div class="content">
-        <div class="toggle-container">
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              id="toggle-tat"
-              onclick="mostrarTAT(event)"
-            />
-            <span class="slider"></span>
-          </label>
-          <label for="toggle-tat"><b>Ver conteúdo</b></label>
-        </div>
-        <section id="elemento-pai-tat"></section>
-        <small class="tag curso"><b>Curso</b></small>
       </div>
 
-      <a
-        href="https://www.atlanticoavanti.com.br/bootcamp"
-        target="_blank"
-        class="memory"
-      >
-        <small>Agosto de 2023 - Setembro de 2023</small>
-        <h1>Básico de Quality Assurance</h1>
-        <div>
-          <img src="assets\atlantico.png" alt="Logo do Atlântico Avanti." />
+      <div class="formacao">
+        <a
+          href="https://www.udemy.com/course/testes-automatizados-com-cypress-basico/"
+          target="_blank"
+          class="memory"
+        >
+          <small>Janeiro de 2024 - Janeiro de 2024</small>
+          <h2>Testes automatizados com Cypress - Básico</h2>
+          <div>
+            <img src="./assets/tat.png" />
+          </div>
+          <p>
+            <small> Oferecido por: Talking About Testing (TAT). </small>
+          </p>
+        </a>
+        <div class="content">
+          <div class="toggle-container">
+            <label class="toggle-switch">
+              <input
+                type="checkbox"
+                id="toggle-tat"
+                onclick="mostrarTAT(event)"
+              />
+              <span class="slider"></span>
+            </label>
+            <label for="toggle-tat"><b>Ver conteúdo</b></label>
+          </div>
+          <section id="elemento-pai-tat"></section>
+          <small class="tag curso"><b>Curso</b></small>
         </div>
-        <p>
-          <small> Oferecido por: Atlântico Avanti. </small>
-        </p>
-      </a>
-      <div class="content">
-        <div class="toggle-container">
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              id="toggle-bootcamp"
-              onclick="mostrarAtlantico(event)"
-            />
-            <span class="slider"></span>
-          </label>
-          <label for="toggle-bootcamp"><b>Ver conteúdo</b></label>
-        </div>
-        <section id="elemento-pai-atlantico"></section>
-        <small class="tag bootcamp"><b>Bootcamp</b></small>
       </div>
 
-      <a href="https://qacoders.com.br/" target="_blank" class="memory">
+      <div class="formacao">
+        <a
+          href="https://www.atlanticoavanti.com.br/bootcamp"
+          target="_blank"
+          class="memory"
+        >
+          <small>Agosto de 2023 - Setembro de 2023</small>
+          <h2>Básico de Quality Assurance</h2>
+          <div>
+            <img src="assets\atlantico.png" alt="Logo do Atlântico Avanti." />
+          </div>
+          <p>
+            <small> Oferecido por: Atlântico Avanti. </small>
+          </p>
+        </a>
+        <div class="content">
+          <div class="toggle-container">
+            <label class="toggle-switch">
+              <input
+                type="checkbox"
+                id="toggle-bootcamp"
+                onclick="mostrarAtlantico(event)"
+              />
+              <span class="slider"></span>
+            </label>
+            <label for="toggle-bootcamp"><b>Ver conteúdo</b></label>
+          </div>
+          <section id="elemento-pai-atlantico"></section>
+          <small class="tag bootcamp"><b>Bootcamp</b></small>
+        </div>
+      </div>
+
+      <div class="formacao">
+        <a href="https://qacoders.com.br/" target="_blank" class="memory">
         <small>Abril de 2023 - Junho de 2023</small>
-        <h1>Formação Quality Assurance</h1>
+        <h2>Formação Quality Assurance</h2>
         <div>
           <img
             src="./assets/Qa.Coders_remini.jpg"
@@ -251,10 +288,12 @@
         <section id="elemento-pai-qa"></section>
         <small class="tag programa"><b>Programa</b></small>
       </div>
+      </div>
 
-      <a href="https://www.portaltechs.com/" target="_blank" class="memory">
+      <div class="formacao">
+        <a href="https://www.portaltechs.com/" target="_blank" class="memory">
         <small>Abril de 2023 - Junho de 2023</small>
-        <h1>Introdução à Programação com foco em Front-end</h1>
+        <h2>Introdução à Programação com foco em Front-end</h2>
         <div>
           <img
             src="./assets/Proz_remini.jpg"
@@ -282,6 +321,7 @@
         </div>
         <section id="elemento-pai-proz"></section>
         <small class="tag curso"><b>Curso</b></small>
+      </div>
       </div>
     </main>
     <footer>

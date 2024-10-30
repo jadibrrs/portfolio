@@ -87,7 +87,7 @@ main {
 main div a {
   text-decoration: none;
   color: #02234a;
-  padding: 16px;
+  padding: 16px 0;
   width: 100%;
   border-radius: 8px;
   width: fill;
@@ -96,7 +96,7 @@ main div a {
 .menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
   background: linear-gradient(#0d0d5a, #04003c, #06012f);
   border: #131011;
   gap: 16px;
@@ -132,18 +132,18 @@ main div p {
 
 .modal-content a:hover,
 .rede:hover {
-  background-color: #2273bb;
+  background-color: #2087e0;
   color: #eaeaea;
   border-radius: 8px;
 }
 
 .menu a:hover {
-  color: #2273bb;
+  color: #4298e4;
 }
 
 main button {
   border-radius: 8px;
-  background: linear-gradient(#004faf, #001834);
+  background: linear-gradient(#2087e0, #003470);
   width: 120px;
   height: 50px;
   font-size: 16px;
@@ -151,12 +151,12 @@ main button {
   color: #eaeaea;
   padding: 8px;
   display: block;
-  margin: -12px 0 -12px 0;
+  margin: 0;
   cursor: pointer;
 }
 
 main button:hover {
-  background: linear-gradient(#004498, #001227);
+  background: linear-gradient(#005fd4, #001a39);
 }
 
 main div p a {
@@ -403,8 +403,10 @@ header p small {
   font-size: 1rem;
 }
 
-.tags {
+.tags,
+.ver-projeto {
   display: inline-block;
+  margin-top: 8px;
 }
 
 small.tag {
@@ -514,9 +516,17 @@ footer div {
 
 .container-filtro {
   display: flex;
-  justify-content: flex-end;
-  margin: 10px 0 10px 20px;
+  flex-direction: row;
+  margin: 10px 0 10px 0;
   position: relative;
+}
+
+.titulo-e-filtro {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .botao-filtro {
@@ -534,7 +544,7 @@ footer div {
 }
 
 .filtrar {
-  width: 20px;
+  width: 15px;
 }
 
 /* Estilos para o modal */
@@ -595,7 +605,7 @@ footer div {
   border: none;
   border-radius: 8px;
   color: #eaeaea;
-  background: linear-gradient(#16163c, #010f1f);
+  background: linear-gradient(#072448, #021225);
   width: 150px;
   height: 50px;
   font-size: 16px;
@@ -607,7 +617,7 @@ footer div {
 }
 
 .btnTopo:hover {
-  background: linear-gradient(#12122e, #010a14);
+  background: linear-gradient(#12122e, #01060c);
 }
 
 .grid {
