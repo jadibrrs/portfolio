@@ -165,7 +165,7 @@ main div p a {
 }
 
 .resumo_qualificacoes {
-  padding: 16px;
+  padding: 32px;
   border: solid 1px #79aeef;
   border-radius: 8px;
   display: grid;
@@ -698,5 +698,19 @@ footer div {
     justify-content: center;
     border-radius: 8px;
     padding: -4px;
+  }
+
+  .resumo_qualificacoes {
+    padding: 24px;
+  }
+
+  .projetos {
+    display: block;
+    gap: 24px;
+  }
+
+  .projeto {
+    padding: 24px;
+    width: 100%;
   }
 }
