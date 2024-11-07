@@ -132,13 +132,13 @@ main div p {
 
 .modal-content a:hover,
 .rede:hover {
-  background-color: #2087e0;
+  background-color: #196cb4;
   color: #eaeaea;
   border-radius: 8px;
 }
 
 .menu a:hover {
-  color: #4298e4;
+  color: #1e7fd4;
 }
 
 main button {
@@ -313,7 +313,7 @@ li {
   flex-direction: column;
   text-decoration: none;
   border-radius: 8px;
-  background-color: #0016a51e;
+  background: linear-gradient(#0016a53a, #0059ff41);
   padding: 48px;
   /* height: fit-content; */
 }
@@ -586,7 +586,8 @@ footer div {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.opcao.selecionado {
+.opcao.selecionado,
+.opcao:hover {
   background-color: #007bff;
   color: #fff;
 }
@@ -627,7 +628,9 @@ footer div {
 }
 
 .item {
-  background-color: #dde5ee;
+  /* background-color: #f1f3f5; */
+  background: linear-gradient(#f1f3f5, #d8dfe8);
+  border: solid 0.5px;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
