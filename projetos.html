@@ -20,6 +20,7 @@
     <script src="./scripts/toggle-conteudo.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
     <script src="./scripts/btn-filtro-projetos.js" defer></script>
+    <script src="./scripts/collapse-menu.js" defer></script>
 
     <title>Jadi Barros | Portfólio</title>
   </head>
@@ -141,12 +142,14 @@
       <div class="projetos">
         <div class="projeto">
           <h2>CAT TAT</h2>
-          <p>Condução de testes automatizados web e API.</p>
+          <p>Criação de scripts de testes automatizados, web e API.</p>
           <p>
             Desenvolvido durante a realização do curso Testes automatizados com
-            Cypress - Básico. Os testes foram realizados na plataforma Central de
-            Atendimento ao Cliente da escola Talking About Testing, denominada CAT
-            TAT.
+            Cypress - Básico.
+          </p>
+          <p>
+            Os testes foram realizados na plataforma Central de Atendimento ao
+            Cliente da escola Talking About Testing, denominada CAT TAT.
           </p>
           <div>
             <a
@@ -166,8 +169,11 @@
         <div class="projeto">
           <h2>AcademyBugs.com</h2>
           <p>
-            Testes exploratórios foram realizados no site <a href="https://academybugs.com/find-bugs/">AcademyBugs.com</a>, com registro dos bugs no relatório disponível abaixo. Desenvolvido para resolução de um desafio técnico.
+            Testes exploratórios foram realizados no site
+            <a href="https://academybugs.com/find-bugs/">AcademyBugs.com</a>,
+            com registro dos bugs no relatório disponível abaixo.
           </p>
+          <p>Desenvolvido para resolução de um desafio técnico.</p>
           <div>
             <a
               href="https://docs.google.com/document/d/1dXrynW-fbQMbcTVK6deDSruIEvy-FQURFGC3hyILOVo/edit?usp=sharing"
@@ -183,9 +189,8 @@
 
         <div class="projeto">
           <h2>Biome Quality</h2>
-          <p>
-            Criação de scripts de testes automatizados para aplicação web. Desenvolvido para resolução de um desafio técnico.
-          </p>
+          <p>Criação de scripts de testes automatizados, web.</p>
+          <p>Desenvolvido para resolução de um desafio técnico.</p>
           <div>
             <a
               href="https://github.com/jadibrrs/desafio_tecnico_neoprospecta"
@@ -203,8 +208,12 @@
 
         <div class="projeto">
           <h2>Desafio de 21 dias programando em Python</h2>
-          <p>Para cada dia, um programa desenvolvido:</p>
-          <div class="grid">
+          <p>
+            Para cada dia, um programa. Conheça os 21 programas clicando em
+            "Saiba mais".
+          </p>
+          <p class="collapsible">Saiba mais</p>
+          <div class="grid collapse-content">
             <div class="item">Identificador de números pares e ímpares</div>
             <div class="item">Calculadora básica</div>
             <div class="item">Verificador de palíndromos</div>

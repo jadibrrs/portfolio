@@ -312,6 +312,31 @@ li {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  border-radius: 8px;
+  background-color: #0016a51e;
+  padding: 48px;
+  /* height: fit-content; */
+}
+
+.collapsible {
+  color: #007acc;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 8px;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+  color: #005ea0;
+}
+
+.collapse-content {
+  overflow: hidden;
+  font-size: 16px;
+  display: none;
 }
 
 .fechar {
@@ -596,7 +621,7 @@ footer div {
 }
 
 .grid {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px; /* Espaçamento entre os itens */
 }
