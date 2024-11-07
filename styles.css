@@ -710,6 +710,7 @@ footer div {
 
   .projeto {
     padding: 24px;
+    margin-bottom: 8px;
     max-width: 100%;
   }
 }
