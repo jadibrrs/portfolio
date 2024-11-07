@@ -705,12 +705,11 @@ footer div {
   }
 
   .projetos {
-    display: block;
     gap: 24px;
   }
 
   .projeto {
     padding: 24px;
-    width: 100%;
+    max-width: 100%;
   }
 }
