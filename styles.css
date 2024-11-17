@@ -166,11 +166,10 @@ main div p a {
 
 .resumo_qualificacoes {
   padding: 32px;
-  border: solid 1px #79aeef;
   border-radius: 8px;
   display: grid;
   gap: 16px;
-  background: linear-gradient(to bottom, #79aeef, #f1f3f5);
+  background: linear-gradient(#0016a53a, #0059ff41);
   color: #f1f3f5;
 }
 
