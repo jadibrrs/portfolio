@@ -304,7 +304,7 @@ li {
 .projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 36px;
+  gap: 24px;
 }
 
 .projeto {
@@ -712,11 +712,6 @@ footer div {
     padding: 24px;
   }
 
-  .projetos {
-    gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
   .projeto {
     padding: 24px;
     margin-bottom: 8px;
@@ -732,5 +727,10 @@ footer div {
 @media (max-width: 415px) {
   .modal-filtro {
     width: 100%;
+  }
+
+  .projetos {
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
