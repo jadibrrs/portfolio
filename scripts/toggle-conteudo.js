@@ -11,6 +11,22 @@ function toggleConteudo(elementId, content) {
 }
 
 // EXPERIÊNCIA //
+function mostrarSofist(event) {
+  const checkbox = event.target
+  if (checkbox.checked) {
+    toggleConteudo(
+      "elemento-pai-sofist",
+      `
+      <ul>
+        Ops, ainda não temos informações sobre esta experiência.
+      </ul>
+      `
+    )
+  } else {
+    toggleConteudo("elemento-pai-sofist", "")
+  }
+}
+
 function mostrarAgenda(event) {
   const checkbox = event.target
   if (checkbox.checked) {

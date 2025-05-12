@@ -46,7 +46,7 @@ body {
 }
 
 main {
-  padding: 32px 64px;
+  padding: 100px 64px 48px 64px;
   grid-area: timeline;
 
   animation: entering 0.7s ease-in-out;
@@ -65,13 +65,14 @@ main {
 .redes {
   gap: 2px;
 }
+
 .rede,
 .redes {
   display: flex;
   text-align: center;
 }
 
-.redes p {
+.rede a p {
   font-size: 16px;
 }
 
@@ -90,14 +91,13 @@ main div a {
   padding: 16px 0;
   width: 100%;
   border-radius: 8px;
-  width: fill;
 }
 
 .menu {
   display: flex;
   justify-content: center;
-  margin: -32px -64px 40px -64px;
-  background: linear-gradient(#09093e, #060329, #040121);
+  margin: 0 -64px 40px -64px;
+  background: linear-gradient(#101056, #080434, #040121);
   border: #131011;
   gap: 16px;
 }
@@ -105,7 +105,7 @@ main div a {
 .menu a {
   text-decoration: none;
   text-align: right;
-  padding: 16px;
+  padding: 12px;
   color: #eaeaea;
   font-weight: 600;
   width: auto;
@@ -127,7 +127,8 @@ main div p {
 }
 
 .content {
-  margin: 16px 0 48px 0;
+  margin: -16px 0 24px 0;
+  width: 100%;
 }
 
 .modal-content a:hover,
@@ -177,6 +178,7 @@ main div p a {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
 label {
@@ -271,6 +273,10 @@ li {
   color: #02234a;
 }
 
+.experience {
+  margin-bottom: 24px;
+}
+
 .memory img {
   width: 100%;
   height: 280px;
@@ -301,13 +307,13 @@ li {
   display: none;
 }
 
-.projetos {
+.projetos, .formacoes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 24px;
 }
 
-.projeto {
+.projeto, .formacao {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -321,27 +327,6 @@ li {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-.collapsible {
-  color: #007acc;
-  cursor: pointer;
-  text-align: left;
-  border-radius: 8px;
-  outline: none;
-  font-size: 18px;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-.collapsible:hover {
-  color: #005ea0;
-}
-
-.collapse-content {
-  overflow: hidden;
-  font-size: 16px;
-  display: none;
 }
 
 .fechar {
@@ -366,12 +351,19 @@ li {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header {
   grid-area: profile;
   background: linear-gradient(#000061, #04003d, #05002c);
   display: flex;
   align-items: center;
   justify-content: top;
-  padding: 32px 64px;
+  padding: 12px 64px 0 64px;
   border-right: solid 1px;
   border-right: none;
   flex-direction: row;
@@ -382,15 +374,15 @@ header {
   justify-content: space-between;
 }
 
-header * {
+.header * {
   animation: entering 0.7s ease-in-out;
 }
 
-header div div a {
+.header div div a {
   text-decoration: none;
 }
 
-header .foto_perfil {
+.header .foto_perfil {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -398,7 +390,7 @@ header .foto_perfil {
   background: linear-gradient(270deg, #ffffff, #eaeaea) border-box;
 }
 
-header p {
+.header p {
   font-size: 1.7rem;
   color: #ffffff;
   padding: 16px;
@@ -406,7 +398,7 @@ header p {
   text-align: left;
   text-shadow: black;
 }
-header p small {
+.header p small {
   font-size: 1rem;
 }
 
@@ -559,12 +551,12 @@ footer div {
   position: absolute;
   top: 100%; /* para posicionar abaixo do botão */
   right: 0; /* alinhar com o botão */
-  width: 300px;
+  width: 400px;
   padding: 24px 24px 32px 24px;
   border: 1px solid #ddd;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 998;
   border-radius: 5px;
   gap: 16px;
 }
@@ -575,9 +567,9 @@ footer div {
   gap: 64px;
 }
 
-.categoria {
+.categoria, .categoria-verificar {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 16px;
 }
@@ -654,7 +646,7 @@ footer div {
     font-size: 16px;
   }
 
-  header {
+  .header {
     grid-area: profile;
     background: linear-gradient(#000061, #04003d, #05002c);
     display: flex;
@@ -691,11 +683,11 @@ footer div {
     cursor: pointer;
   }
 
-  header p {
+  .header p {
     font-size: 16px;
   }
 
-  header p strong {
+  .header p strong {
     font-size: 18px;
   }
 
