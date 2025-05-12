@@ -541,6 +541,8 @@ footer div {
   align-items: center;
 }
 
+
+
 .filtrar {
   width: 15px;
 }
@@ -589,14 +591,23 @@ footer div {
   color: #fff;
 }
 
-#botaoAplicarFiltro {
+.btns-filtro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 8px;
+}
+
+#botaoFiltrar, #botaoLimpar {
   width: 100%;
   margin-top: 10px;
   padding: 10px;
-  background-color: #28a745;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btnTopo {
@@ -636,6 +647,11 @@ footer div {
   align-items: center; /* Centraliza verticalmente */
   height: 100px; /* Defina a altura desejada */
   border-radius: 8px;
+}
+
+main button#botaoLimpar {
+  background: linear-gradient(#ffffff, #bbc9db);
+  color: #003067;
 }
 
 @media (max-width: 825px) {

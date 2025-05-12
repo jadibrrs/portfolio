@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const botaoFiltro = document.getElementById("botaoFiltro")
   const modalFiltro = document.getElementById("modalFiltro")
   const opcoes = document.querySelectorAll(".opcao")
-  const botaoAplicarFiltro = document.getElementById("botaoAplicarFiltro")
+  const botaoFiltrar = document.getElementById("botaoFiltrar")
   const categorias = document.querySelectorAll(".categoria-verificar") // Seleciona todos as categorias correspondentes
 
   // Alterna o modal ao clicar no botão
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  // Filtra as formações ao clicar em "Aplicar Filtro"
-  botaoAplicarFiltro.addEventListener("click", () => {
+  // Filtra as formações ao clicar em "Filtrar"
+  botaoFiltrar.addEventListener("click", () => {
     // Pega as categorias selecionadas
     const categoriasSelecionadas = Array.from(opcoes)
       .filter((opcao) => opcao.classList.contains("selecionado"))
@@ -54,7 +54,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
 
-    // Fecha o modal de filtro após aplicar
+    // Fecha o modal de filtro após filtrar
     modalFiltro.style.display = "none"
+  })
+})
+
+// Limpar
+const botaoLimpar = document.getElementById("botaoLimpar")
+
+botaoLimpar.addEventListener("click", () => {
+  // Mostrar todos os elementos com a classe .categoria-verificar
+  const elementos = document.querySelectorAll(".categoria-verificar")
+  elementos.forEach((elemento) => {
+    elemento.style.display = "" // Exibe novamente todos os elementos
+  })
+
+  // Desmarcar todas as opções de filtro
+  const opcoes = document.querySelectorAll(".opcao.selecionado")
+  opcoes.forEach((opcao) => {
+    opcao.classList.remove("selecionado") // Remove a classe 'selecionado'
+    opcao.classList.add("opcao") // Garante que a classe 'opcao' permaneça
+  })
+
+  // Se tiver algum input (checkbox ou similar), podemos desmarcar também:
+  const inputs = document.querySelectorAll('input[type="checkbox"]')
+  inputs.forEach((input) => {
+    input.checked = false // Desmarca todos os checkboxes
   })
 })
