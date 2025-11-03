@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="icon" type="image/png" href="./assets/foto-aba-navegador.jpg" />
-
     <link rel="stylesheet" href="./styles.css" />
-
     <script src="./scripts/modal-menu.js" defer></script>
-    <script src="./scripts/toggle-conteudo.js" defer></script>
+    <script src="./scripts/toggle-conteudo-en.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
-
-    <title>Jadi Barros | Portfólio</title>
+    <title>Jadi Barros | Portfolio</title>
   </head>
   <body>
     <header>
@@ -29,16 +24,14 @@
           <img
             class="foto_perfil"
             src="./assets/logo.jpg"
-            alt="Foto da Jadi"
+            alt="Jadi's photo"
           />
-
           <p>
             <strong>JADI BARROS </strong>
             <br />
             <small>Software QA Engineer</small>
           </p>
         </div>
-
         <div class="redes">
           <div class="rede">
             <a href="mailto:jbheliodoro@gmail.com" target="_blank">
@@ -53,7 +46,7 @@
             </a>
           </div>
           <div class="rede">
-            <a href="https://www.instagram.com/jadibarros_/" target="_blank">
+            <a href="https://www.instagram.com/jadibarros.qa/" target="_blank">
               <img src="./assets/instagram.png" width="25px" />
               <p>Instagram</p>
             </a>
@@ -65,28 +58,24 @@
             </a>
           </div>
         </div>
-
         <img
           src="./assets/menu.png"
-          alt="Ícone Menu"
+          alt="Menu Icon"
           class="menu-icone"
           onclick="modalMenu(event)"
         />
-
         <div id="menu-modal" class="menu-modal">
           <div class="modal-content">
             <span class="close" onclick="modalMenu()">&times;</span>
-            <a href="./index.html">Home</a>
-            <a href="./experiencia.html">Experiência</a>
-            <a href="./formacao.html">Formação</a>
-            <a href="./projetos.html">Projetos</a>
-
+            <a href="./index-en.html">Home</a>
+            <a href="./experiencia-en.html">Experience</a>
+            <a href="./formacao-en.html">Education</a>
+            <a href="./projetos-en.html">Projects</a>
             <div class="language-switcher">
-              <a href="./index.html" class="lang-active">PT</a>
+              <a href="./index.html" class="lang-inactive">PT</a>
               <span>|</span>
-              <a href="./index-en.html" class="lang-inactive">EN</a>
+              <a href="./index-en.html" class="lang-active">EN</a>
             </div>
-
             <div class="social-icons">
               <a href="mailto:jbheliodoro@gmail.com" target="_blank">
                 <img src="./assets/email.png" width="25px" />
@@ -104,94 +93,83 @@
           </div>
         </div>
       </div>
-
       <div class="menu">
-        <a href="./index.html">Home</a>
-        <a href="./experiencia.html">Experiência</a>
-        <a href="./formacao.html">Formação</a>
-        <a href="./projetos.html">Projetos</a>
-
+        <a href="./index-en.html">Home</a>
+        <a href="./experiencia-en.html">Experience</a>
+        <a href="./formacao-en.html">Education</a>
+        <a href="./projetos-en.html">Projects</a>
         <div class="language-switcher">
-          <a href="./index.html" class="lang-active">PT</a>
+          <a href="./index.html" class="lang-inactive">PT</a>
           <span>|</span>
-          <a href="./index-en.html" class="lang-inactive">EN</a>
+          <a href="./index-en.html" class="lang-active">EN</a>
         </div>
       </div>
     </header>
     <main>
       <div class="sobre_mim">
-        <h1>Olá, bem-vindo(a/e) ao meu site!</h1>
+        <h1>Hello, welcome to my website!</h1>
         <p>
-          Sinta-se à vontade para explorar meu trabalho e entrar em contato caso queira saber mais sobre como posso
-          contribuir para o sucesso do seu projeto!
+          Feel free to explore my work and get in touch if you'd like to know more about how I can
+          contribute to your project's success!
         </p>
         <p>
-          Destaco-me em testes manuais, especialmente os funcionais e
-          exploratórios, e no desenvolvimento de testes automatizados,
-          contribuindo para a constante melhoria dos processos de qualidade.
+          I stand out in manual testing, especially functional and
+          exploratory testing, and in developing automated tests,
+          contributing to the continuous improvement of quality processes.
         </p>
         <br />
-
         <h2>Tech Stack</h2>
-        
         <div class="grid-resumo">
           <div class="resumo_qualificacoes">
-            <p><b>Automação de testes Web:</b> Cypress</p>
+            <p><b>Web Test Automation:</b> Cypress</p>
           </div>
-
           <div class="resumo_qualificacoes">
-            <p><b>Testes de API:</b> Postman</p>
+            <p><b>API Testing:</b> Postman</p>
           </div>
-
           <div class="resumo_qualificacoes">
-            <p><b>Testes Cross-Browser:</b> Browserstack</p>
+            <p><b>Cross-Browser Testing:</b> Browserstack</p>
           </div>
-
           <div class="resumo_qualificacoes">
-            <p><b>Conjunto de ferramentas e documentação de APIs:</b> Swagger</p>
+            <p><b>API Tools & Documentation:</b> Swagger</p>
           </div>
-
+          
           <div class="resumo_qualificacoes">
-            <p><b>Metodologias:</b> Scrum, Kanban e Waterfall</p>
+            <p><b>Methodologies:</b> Scrum, Kanban, and Waterfall</p>
           </div>
-
           <div class="resumo_qualificacoes">
-            <p><b>Ferramentas de gestão:</b> Azure DevOps, Jira</p>
+            <p><b>Management Tools:</b> Azure DevOps, Jira</p>
           </div>
-
           <div class="resumo_qualificacoes">
-            <p><b>Ferramentas de controle de versão:</b> Git, GitHub</p>
+            <p><b>Version Control Tools:</b> Git, GitHub</p>
           </div>
-
           <div class="resumo_qualificacoes">
             <p>
-              <b>Linguagens de programação:</b> JavaScript, Python, Java e C#
+              <b>Programming Languages:</b> JavaScript, Python, Java, and C#
             </p>
           </div>
-
           <div class="resumo_qualificacoes">
-            <p><b>Banco de dados:</b> SQL Server, MySQL, MongoDB</p>
+            <p><b>Databases:</b> SQL Server, MySQL, MongoDB</p>
           </div>
-        </div> <br>
-
-        <h2>Outras qualificações</h2>
+        </div>
+        <h2>Other qualifications</h2>
         <div class="grid-resumo">
-          <ul><b>Certificações:</b>
+          <ul><b>Certifications:</b>
             <li>Accredited Software Testing Fundamentals Certification (ASTFC)™</li>
             <li>Scrum Foundation Professional Certification (SFPC)™</li>
           </ul>
 
-          <ul><b>Idiomas:</b>
-            <li>Inglês intermediário (B2)</li>
-            <li>Espanhol básico (A2)</li>
+          <ul><b>Languages:</b>
+            <li>Intermediate English (B2)</li>
+            <li>Basic Spanish (A2)</li>
           </ul>
         </div>
+        <br>
       </div>
     </main>
     <footer>
       <div>
-        <button id="btnTopo" class="btnTopo" title="Voltar ao topo">
-          ⬆ Voltar ao topo
+        <button id="btnTopo" class="btnTopo" title="Back to top">
+          ⬆ Back to top
         </button>
       </div>
     </footer>

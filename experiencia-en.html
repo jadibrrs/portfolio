@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,10 +13,10 @@
     <link rel="icon" type="image/png" href="./assets/foto-aba-navegador.jpg" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./scripts/modal-menu.js" defer></script>
-    <script src="./scripts/toggle-conteudo.js" defer></script>
+    <script src="./scripts/toggle-conteudo-en.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
     <script src="./scripts/btn-filtrar.js" defer></script>
-    <title>Jadi Barros | Experiência</title>
+    <title>Jadi Barros | Experience</title>
   </head>
   <body>
     <header>
@@ -25,7 +25,7 @@
           <img
             class="foto_perfil"
             src="./assets/logo.jpg"
-            alt="Foto da Jadi"
+            alt="Jadi's photo"
           />
           <p>
             <strong>JADI BARROS </strong>
@@ -61,21 +61,21 @@
         </div>
         <img
           src="./assets/menu.png"
-          alt="Ícone Menu"
+          alt="Menu Icon"
           class="menu-icone"
           onclick="modalMenu(event)"
         />
         <div id="menu-modal" class="menu-modal">
           <div class="modal-content">
             <span class="close" onclick="modalMenu()">&times;</span>
-            <a href="./index.html">Home</a>
-            <a href="./experiencia.html">Experiência</a>
-            <a href="./formacao.html">Formação</a>
-            <a href="./projetos.html">Projetos</a>
+            <a href="./index-en.html">Home</a>
+            <a href="./experiencia-en.html">Experience</a>
+            <a href="./formacao-en.html">Education</a>
+            <a href="./projetos-en.html">Projects</a>
             <div class="language-switcher">
-              <a href="./experiencia.html" class="lang-active">PT</a>
+              <a href="./experiencia.html" class="lang-inactive">PT</a>
               <span>|</span>
-              <a href="./experiencia-en.html" class="lang-inactive">EN</a>
+              <a href="./experiencia-en.html" class="lang-active">EN</a>
             </div>
             <div class="social-icons">
               <a href="mailto:jbheliodoro@gmail.com" target="_blank">
@@ -95,112 +95,85 @@
         </div>
       </div>
       <div class="menu">
-        <a href="./index.html">Home</a>
-        <a href="./experiencia.html">Experiência</a>
-        <a href="./formacao.html">Formação</a>
-        <a href="./projetos.html">Projetos</a>
+        <a href="./index-en.html">Home</a>
+        <a href="./experiencia-en.html">Experience</a>
+        <a href="./formacao-en.html">Education</a>
+        <a href="./projetos-en.html">Projects</a>
         <div class="language-switcher">
-          <a href="./experiencia.html" class="lang-active">PT</a>
+          <a href="./experiencia.html" class="lang-inactive">PT</a>
           <span>|</span>
-          <a href="./experiencia-en.html" class="lang-inactive">EN</a>
+          <a href="./experiencia-en.html" class="lang-active">EN</a>
         </div>
       </div>
     </header>
-
+    
     <main class="main-wrapper">
-      
       <div class="lista-conteudo">
         
         <div class="titulo-e-filtro">
-          <h1>Experiência</h1>
+          <h1>Experience</h1>
           <button id="botaoFiltro" class="botao-filtro">
-            <img src="./assets/filtro.png" alt="Filtrar" class="filtrar" />
+            <img src="./assets/filtro.png" alt="Filter" class="filtrar" />
           </button>
         </div>
 
         <div class="categoria-verificar">
-          <a
-            href="https://www.sofist.co/"
-            target="_blank"
-            class="memory experience"
-          >
-            <small>Dezembro de 2024 - Atualmente</small>
+          <a href="https://www.sofist.co/" target="_blank" class="memory experience">
+            <small>December 2024 - Present</small>
             <h2>Sofist</h2>
-            <p>Analista de Testes Humanos</p>
-            <div>
-              <img src="./assets/sofist.png" />
-            </div>
+            <p>Human Tester Analyst</p>
+            <div><img src="./assets/sofist.png" /></div>
           </a>
           <div class="content">
             <div class="toggle-container">
               <label class="toggle-switch">
-                <input
-                  type="checkbox"
-                  id="toggle-sofist"
-                  onclick="mostrarSofist(event)"
-                />
+                <input type="checkbox" id="toggle-sofist" onclick="mostrarSofist(event)"/>
                 <span class="slider"></span>
               </label>
-              <label for="toggle-sofist"><b>Ver atividades</b></label>
+              <label for="toggle-sofist"><b>View activities</b></label>
             </div>
             <section id="elemento-pai-sofist"></section>
-            <small class="tag senioridade">Júnior</small>
+            <small class="tag senioridade">Junior</small>
           </div>
         </div>
 
         <div class="categoria-verificar">
-          <a
-            href="https://www.agendaassessoria.com.br/"
-            target="_blank"
-            class="memory experience"
-          >
-            <small>Junho de 2024 - Outubro de 2024</small>
+          <a href="https://www.agendaassessoria.com.br/" target="_blank" class="memory experience">
+            <small>June 2024 - October 2024</small>
             <h2>Agenda Assessoria</h2>
-            <p>Analista de Qualidade de Software</p>
-            <div>
-              <img src="./assets/agenda.png" />
-            </div>
+            <p>Software Quality Analyst</p>
+            <div><img src="./assets/agenda.png" /></div>
           </a>
           <div class="content">
             <div class="toggle-container">
               <label class="toggle-switch">
-                <input
-                  type="checkbox"
-                  id="toggle-agenda"
-                  onclick="mostrarAgenda(event)"
-                />
+                <input type="checkbox" id="toggle-agenda" onclick="mostrarAgenda(event)"/>
                 <span class="slider"></span>
               </label>
-              <label for="toggle-agenda"><b>Ver atividades</b></label>
+              <label for="toggle-agenda"><b>View activities</b></label>
             </div>
             <section id="elemento-pai-agenda"></section>
-            <small class="tag senioridade">Júnior</small>
+            <small class="tag senioridade">Junior</small>
           </div>
         </div>
 
         <div class="categoria-verificar">
           <a href="https://mpmt.mp.br/" target="_blank" class="memory experience">
-            <small>08 de Agosto de 2023 - 12 de Março de 2024</small>
-            <h2>Ministério Público de Mato Grosso - Departamento de Tecnologia e Informação</h2>
-            <p>Estagiária de TI - Desenvolvimento de Sistemas</p>
-            <div>
-              <img src="./assets/mpmt.png" />
-            </div>
+            <small>August 08, 2023 - March 12, 2024</small>
+            <h2>Mato Grosso State Public Ministry - IT Department</h2>
+            <p>IT Intern - Systems Development</p>
+            <div><img src="./assets/mpmt.png" /></div>
           </a>
           <div class="content">
             <div class="toggle-container">
               <label class="toggle-switch">
-                <input
-                  type="checkbox"
-                  id="toggle-estagio"
-                  onclick="mostrarEstagio(event)"
-                />
+                <input type="checkbox" id="toggle-estagio" onclick="mostrarEstagio(event)"/>
                 <span class="slider"></span>
               </label>
-              <label for="toggle-estagio"><b>Ver atividades</b></label>
+              <label for="toggle-estagio"><b>View activities</b></label>
             </div>
             <section id="elemento-pai-estagio"></section>
-            <small class="tag senioridade">Estágio</small>
+            <small class="tag senioridade">Internship</small>
           </div>
         </div>
         <br />
@@ -208,29 +181,27 @@
 
       <div id="filtro-container">
         <div class="opcoes-filtro">
-          <h3>Filtrar por:</h3>
-          <p><small><i>Experiências que correspondem a qualquer filtro selecionado serão exibidas.</i></small></p>
+          <h4>Filter by:</h4>
+          <p><small><i>Experiences matching any selected filter will be shown.</i></small></p>
           <br>
-          <h4>Senioridade:</h4>
+          <h4>Seniority:</h4>
           <div class="categoria">
-            <span class="opcao" data-valor="Estágio">Estágio</span>
-            <span class="opcao" data-valor="Júnior">Júnior</span>
+            <span class="opcao" data-valor="Internship">Internship</span>
+            <span class="opcao" data-valor="Junior">Junior</span>
           </div>
-
           <div class="btns-filtro">
-            <button id="botaoFiltrar">Filtrar</button>
-            <button id="botaoLimpar">Limpar</button>
+            <button id="botaoFiltrar">Filter</button>
+            <button id="botaoLimpar">Clear</button>
           </div>
         </div>
       </div>
       
       <div id="filtro-overlay"></div>
     </main>
-
     <footer>
       <div>
-        <button id="btnTopo" class="btnTopo" title="Voltar ao topo">
-          ⬆ Voltar ao topo
+        <button id="btnTopo" class="btnTopo" title="Back to top">
+          ⬆ Back to top
         </button>
       </div>
     </footer>

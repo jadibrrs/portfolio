@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,11 +13,11 @@
     <link rel="icon" type="image/png" href="./assets/foto-aba-navegador.jpg" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./scripts/modal-menu.js" defer></script>
-    <script src="./scripts/toggle-conteudo.js" defer></script>
+    <script src="./scripts/toggle-conteudo-en.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
     <script src="./scripts/btn-filtrar.js" defer></script>
     <script src="./scripts/collapse-menu.js" defer></script>
-    <title>Jadi Barros | Projetos</title>
+    <title>Jadi Barros | Projects</title>
   </head>
   <body>
     <header>
@@ -26,7 +26,7 @@
           <img
             class="foto_perfil"
             src="./assets/logo.jpg"
-            alt="Foto da Jadi"
+            alt="Jadi's photo"
           />
           <p>
             <strong>JADI BARROS </strong>
@@ -62,21 +62,21 @@
         </div>
         <img
           src="./assets/menu.png"
-          alt="Ícone Menu"
+          alt="Menu Icon"
           class="menu-icone"
           onclick="modalMenu(event)"
         />
         <div id="menu-modal" class="menu-modal">
           <div class="modal-content">
             <span class="close" onclick="modalMenu()">&times;</span>
-            <a href="./index.html">Home</a>
-            <a href="./experiencia.html">Experiência</a>
-            <a href="./formacao.html">Formação</a>
-            <a href="./projetos.html">Projetos</a>
+            <a href="./index-en.html">Home</a>
+            <a href="./experiencia-en.html">Experience</a>
+            <a href="./formacao-en.html">Education</a>
+            <a href="./projetos-en.html">Projects</a>
             <div class="language-switcher">
-              <a href="./projetos.html" class="lang-active">PT</a>
+              <a href="./projetos.html" class="lang-inactive">PT</a>
               <span>|</span>
-              <a href="./projetos-en.html" class="lang-inactive">EN</a>
+              <a href="./projetos-en.html" class="lang-active">EN</a>
             </div>
             <div class="social-icons">
               <a href="mailto:jbheliodoro@gmail.com" target="_blank">
@@ -96,14 +96,14 @@
         </div>
       </div>
       <div class="menu">
-        <a href="./index.html">Home</a>
-        <a href="./experiencia.html">Experiência</a>
-        <a href="./formacao.html">Formação</a>
-        <a href="./projetos.html">Projetos</a>
+        <a href="./index-en.html">Home</a>
+        <a href="./experiencia-en.html">Experience</a>
+        <a href="./formacao-en.html">Education</a>
+        <a href="./projetos-en.html">Projects</a>
         <div class="language-switcher">
-          <a href="./projetos.html" class="lang-active">PT</a>
+          <a href="./projetos.html" class="lang-inactive">PT</a>
           <span>|</span>
-          <a href="./projetos-en.html" class="lang-inactive">EN</a>
+          <a href="./projetos-en.html" class="lang-active">EN</a>
         </div>
       </div>
     </header>
@@ -113,9 +113,9 @@
         
         <div class="container-filtro">
           <div class="titulo-e-filtro">
-            <h1>Projetos</h1>
+            <h1>Projects</h1>
             <button id="botaoFiltro" class="botao-filtro">
-              <img src="./assets/filtro.png" alt="Filtrar" class="filtrar" />
+              <img src="./assets/filtro.png" alt="Filter" class="filtrar" />
             </button>
           </div>
         </div>
@@ -124,28 +124,17 @@
           <div class="categoria-verificar projeto">
             <h2>CAT TAT</h2>
             <div class="descricao-projeto">
-              <p>
-                Criação de scripts de testes automatizados, web e API.
-              </p>
-              <p>
-                Desenvolvido durante a realização do curso Testes automatizados com
-                Cypress - Básico.
-              </p>
-              <p>
-                Os testes foram realizados na plataforma Central de Atendimento ao
-                Cliente da escola Talking About Testing, denominada CAT TAT.
-              </p>
+              <p>Creation of automated test scripts, web and API.</p>
+              <p>Developed during the Automated Testing with Cypress - Basic course.</p>
+              <p>Tests were performed on the Talking About Testing Customer Service Center platform (CAT TAT).</p>
             </div>
             <div>
-              <a
-                href="https://github.com/jadibrrs/cypress-basico-v2"
-                target="_blank"
-                title="Projeto CAC TAT"
-                ><button class="ver-projeto">Ver projeto</button></a
-              >
+              <a href="https://github.com/jadibrrs/cypress-basico-v2" target="_blank" title="CAC TAT Project">
+                <button class="ver-projeto">View project</button>
+              </a>
             </div>
             <div class="tags">
-              <small class="tag tipo-de-projeto">Automação</small>
+              <small class="tag tipo-de-projeto">Automation</small>
               <small class="tag ferramenta">Cypress</small>
               <small class="tag linguagem">JavaScript</small>
             </div>
@@ -154,64 +143,49 @@
           <div class="categoria-verificar projeto">
             <h2>AcademyBugs.com</h2>
             <div class="descricao-projeto">
-              <p>
-                Testes exploratórios foram realizados no site
-                <a href="https://academybugs.com/find-bugs/">AcademyBugs.com</a>,
-                com registro dos bugs no relatório disponível abaixo.
-              </p>
-              <p>Desenvolvido para resolução de um desafio técnico.</p>
+              <p>Exploratory testing was conducted on the <a href="https://academybugs.com/find-bugs/">AcademyBugs.com</a> site, with bugs registered in the report available below.</p>
+              <p>Developed to solve a technical challenge.</p>
             </div>
             <div>
-              <a
-                href="https://docs.google.com/document/d/1dXrynW-fbQMbcTVK6deDSruIEvy-FQURFGC3hyILOVo/edit?usp=sharing"
-                target="_blank"
-                title="Projeto AcademyBugs.com"
-                ><button>Ver projeto</button></a
-              >
+              <a href="https://docs.google.com/document/d/1dXrynW-fbQMbcTVK6deDSruIEvy-FQURFGC3hyILOVo/edit?usp=sharing" target="_blank" title="AcademyBugs.com Project">
+                <button>View project</button>
+              </a>
             </div>
             <div class="tags">
-              <small class="tag tipo-de-projeto">Documentação</small>
+              <small class="tag tipo-de-projeto">Documentation</small>
             </div>
           </div>
 
           <div class="categoria-verificar projeto">
             <h2>dev.finance</h2>
             <div class="descricao-projeto">
-              <p>Criação de scripts de testes automatizados web.</p>
-              <p>
-                Os testes foram realizados na plataforma dev.finance, da Agilizei.
-              </p>
+              <p>Creation of automated web test scripts.</p>
+              <p>Tests were performed on Agilizei's dev.finance platform.</p>
             </div>
             <div>
-              <a
-                href="https://github.com/jadibrrs/dev.finance"
-                target="_blank"
-                title="Projeto dev.finance"
-                ><button class="ver-projeto">Ver projeto</button></a
-              >
+              <a href="https://github.com/jadibrrs/dev.finance" target="_blank" title="dev.finance Project">
+                <button class="ver-projeto">View project</button>
+              </a>
             </div>
             <div class="tags">
-              <small class="tag tipo-de-projeto">Automação</small>
+              <small class="tag tipo-de-projeto">Automation</small>
               <small class="tag ferramenta">Cypress</small>
               <small class="tag linguagem">JavaScript</small>
             </div>
           </div>
 
           <div class="categoria-verificar projeto">
-            <h2>Desafio de 21 dias programando em Python</h2>
+            <h2>21-Day Python Programming Challenge</h2>
             <div class="descricao-projeto">
-              <p>Para cada dia, um programa.</p>
+              <p>One program for each day.</p>
             </div>
             <div>
-              <a
-                href="https://github.com/jadibrrs/desafio_21_dias_qa_que_programa"
-                target="_blank"
-                title="Projeto Desafio 21 Dias Programando em Python"
-                ><button>Ver projeto</button></a
-              >
+              <a href="https://github.com/jadibrrs/desafio_21_dias_qa_que_programa" target="_blank" title="21-Day Python Challenge Project">
+                <button>View project</button>
+              </a>
             </div>
             <div class="tags">
-              <small class="tag tipo-de-projeto">Programação</small>
+              <small class="tag tipo-de-projeto">Programming</small>
               <small class="tag linguagem">Python</small>
             </div>
           </div>
@@ -219,19 +193,16 @@
           <div class="categoria-verificar projeto">
             <h2>Biome Quality</h2>
             <div class="descricao-projeto">
-              <p>Criação de scripts de testes automatizados web.</p>
-              <p>Desenvolvido para resolução de um desafio técnico.</p>
+              <p>Creation of automated web test scripts.</p>
+              <p>Developed to solve a technical challenge.</p>
             </div>
             <div>
-              <a
-                href="https://github.com/jadibrrs/desafio_tecnico_neoprospecta"
-                target="_blank"
-                title="Projeto Neoprospecta"
-                ><button>Ver projeto</button></a
-              >
+              <a href="https://github.com/jadibrrs/desafio_tecnico_neoprospecta" target="_blank" title="Neoprospecta Project">
+                <button>View project</button>
+              </a>
             </div>
             <div class="tags">
-              <small class="tag tipo-de-projeto">Automação</small>
+              <small class="tag tipo-de-projeto">Automation</small>
               <small class="tag ferramenta">Cypress</small>
               <small class="tag linguagem">JavaScript</small>
             </div>
@@ -242,27 +213,27 @@
 
       <div id="filtro-container">
         <div class="opcoes-filtro">
-          <h3>Filtrar por:</h3>
-          <p><small><i>Projetos que correspondem a todos os filtros selecionados serão exibidos.</i></small></p>
+          <h4>Filter by:</h4>
+          <p><small><i>Projects matching all selected filters will be shown.</i></small></p>
           <br>
-          <h4>Atividade:</h4>
+          <h4>Activity:</h4>
           <div class="categoria">
-            <span class="opcao" data-valor="Automação">Automação</span>
-            <span class="opcao" data-valor="Programação">Programação</span>
-            <span class="opcao" data-valor="Documentação">Documentação</span>
+            <span class="opcao" data-valor="Automation">Automation</span>
+            <span class="opcao" data-valor="Programming">Programming</span>
+            <span class="opcao" data-valor="Documentation">Documentation</span>
           </div>
-          <h4>Ferramenta:</h4>
+          <h4>Tool:</h4>
           <div class="categoria">
             <span class="opcao" data-valor="Cypress">Cypress</span>
           </div>
-          <h4>Linguagem de Programação:</h4>
+          <h4>Programming Language:</h4>
           <div class="categoria">
             <span class="opcao" data-valor="JavaScript">JavaScript</span>
             <span class="opcao" data-valor="Python">Python</span>
           </div>
           <div class="btns-filtro">
-            <button id="botaoFiltrar">Filtrar</button>
-            <button id="botaoLimpar">Limpar</button>
+            <button id="botaoFiltrar">Filter</button>
+            <button id="botaoLimpar">Clear</button>
           </div>
         </div>
       </div>
@@ -271,8 +242,8 @@
     </main>
     <footer>
       <div>
-        <button id="btnTopo" class="btnTopo" title="Voltar ao topo">
-          ⬆ Voltar ao topo
+        <button id="btnTopo" class="btnTopo" title="Back to top">
+          ⬆ Back to top
         </button>
       </div>
     </footer>

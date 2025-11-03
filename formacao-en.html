@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,10 +13,10 @@
     <link rel="icon" type="image/png" href="./assets/foto-aba-navegador.jpg" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./scripts/modal-menu.js" defer></script>
-    <script src="./scripts/toggle-conteudo.js" defer></script>
+    <script src="./scripts/toggle-conteudo-en.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
     <script src="./scripts/btn-filtrar.js" defer></script>
-    <title>Jadi Barros | Formação</title>
+    <title>Jadi Barros | Education</title>
   </head>
   <body>
     <header>
@@ -25,7 +25,7 @@
           <img
             class="foto_perfil"
             src="./assets/logo.jpg"
-            alt="Foto da Jadi"
+            alt="Jadi's photo"
           />
           <p>
             <strong>JADI BARROS </strong>
@@ -61,21 +61,21 @@
         </div>
         <img
           src="./assets/menu.png"
-          alt="Ícone Menu"
+          alt="Menu Icon"
           class="menu-icone"
           onclick="modalMenu(event)"
         />
         <div id="menu-modal" class="menu-modal">
           <div class="modal-content">
             <span class="close" onclick="modalMenu()">&times;</span>
-            <a href="./index.html">Home</a>
-            <a href="./experiencia.html">Experiência</a>
-            <a href="./formacao.html">Formação</a>
-            <a href="./projetos.html">Projetos</a>
+            <a href="./index-en.html">Home</a>
+            <a href="./experiencia-en.html">Experience</a>
+            <a href="./formacao-en.html">Education</a>
+            <a href="./projetos-en.html">Projects</a>
             <div class="language-switcher">
-              <a href="./formacao.html" class="lang-active">PT</a>
+              <a href="./formacao.html" class="lang-inactive">PT</a>
               <span>|</span>
-              <a href="./formacao-en.html" class="lang-inactive">EN</a>
+              <a href="./formacao-en.html" class="lang-active">EN</a>
             </div>
             <div class="social-icons">
               <a href="mailto:jbheliodoro@gmail.com" target="_blank">
@@ -95,135 +95,100 @@
         </div>
       </div>
       <div class="menu">
-        <a href="./index.html">Home</a>
-        <a href="./experiencia.html">Experiência</a>
-        <a href="./formacao.html">Formação</a>
-        <a href="./projetos.html">Projetos</a>
+        <a href="./index-en.html">Home</a>
+        <a href="./experiencia-en.html">Experience</a>
+        <a href="./formacao-en.html">Education</a>
+        <a href="./projetos-en.html">Projects</a>
         <div class="language-switcher">
-          <a href="./formacao.html" class="lang-active">PT</a>
+          <a href="./formacao.html" class="lang-inactive">PT</a>
           <span>|</span>
-          <a href="./formacao-en.html" class="lang-inactive">EN</a>
+          <a href="./formacao-en.html" class="lang-active">EN</a>
         </div>
       </div>
     </header>
-
+    
     <main class="main-wrapper">
       <div class="lista-conteudo">
         
-        <div class="container-filtro"> <div class="titulo-e-filtro">
-            <h1>Formação</h1>
+        <div class="container-filtro">
+          <div class="titulo-e-filtro">
+            <h1>Education</h1>
             <button id="botaoFiltro" class="botao-filtro">
-              <img src="./assets/filtro.png" alt="Filtrar" class="filtrar" />
+              <img src="./assets/filtro.png" alt="Filter" class="filtrar" />
             </button>
           </div>
         </div>
         
         <div class="categoria-verificar">
-          <a
-            href="https://www.faculdadevincit.edu.br/"
-            target="_blank"
-            class="memory"
-          >
-            <small>Junho de 2023 - Atualmente</small>
-            <h2>Tecnologia em Análise e Desenvolvimento de Sistemas</h2>
+          <a href="https://www.faculdadevincit.edu.br/" target="_blank" class="memory">
+            <small>June 2023 - Present</small>
+            <h2>Technologist in Sytem Analysis and Development</h2>
             <p>Faculdade VINCIT</p>
-            <div>
-              <img src="./assets/vincit.png" />
-            </div>
+            <div><img src="./assets/vincit.png" /></div>
           </a>
           <div class="content">
-            <small class="tag programa">Graduação</small>
+            <small class="tag programa">Degree</small>
           </div>
         </div>
 
         <div class="categoria-verificar">
-          <a
-            href="https://www.juliodelima.com.br/mentoria/"
-            target="_blank"
-            class="memory"
-          >
-            <small>Abril de 2024 - Atualmente</small>
-            <h2>Mentoria em Testes de Software com Júlio de Lima</h2>
+          <a href="https://www.juliodelima.com.br/mentoria/" target="_blank" class="memory">
+            <small>April 2024 - Present</small>
+            <h2>Software Testing Mentorship with Júlio de Lima</h2>
             <p>
-              Júlio de Lima Consultoria e Treinamentos de Testes de Software
-              <br />
-              <small>Participação em 3 edições.</small>
+              Júlio de Lima Consultoria e Treinamentos...
+              <br>
+              <small>Participation in 3 editions.</small>
             </p>
-            <div>
-              <img src="./assets/mentoria.png" />
-            </div>
+            <div><img src="./assets/mentoria.png" /></div>
           </a>
           <div class="content">
             <div class="toggle-container">
               <label class="toggle-switch">
-                <input
-                  type="checkbox"
-                  id="toggle-mentoria"
-                  onclick="mostrarMentoria(event)"
-                />
+                <input type="checkbox" id="toggle-mentoria" onclick="mostrarMentoria(event)"/>
                 <span class="slider"></span>
               </label>
-              <label for="toggle-mentoria"><b>Ver conteúdo</b></label>
+              <label for="toggle-mentoria"><b>View content</b></label>
             </div>
             <section id="elemento-pai-mentoria"></section>
-            <small class="tag programa">Programa</small>
+            <small class="tag programa">Program</small>
           </div>
         </div>
 
         <div class="categoria-verificar">
-          <a
-            href="https://www.udemy.com/course/testes-automatizados-com-cypress-basico/"
-            target="_blank"
-            class="memory"
-          >
-            <small>Janeiro de 2024 - Janeiro de 2024</small>
-            <h2>Testes automatizados com Cypress - Básico</h2>
+          <a href="https://www.udemy.com/course/testes-automatizados-com-cypress-basico/" target="_blank" class="memory">
+            <small>January 2024 - January 2024</small>
+            <h2>Automated Testing with Cypress - Basic</h2>
             <p>Talking About Testing (TAT)</p>
-            <div>
-              <img src="./assets/tat.png" />
-            </div>
+            <div><img src="./assets/tat.png" /></div>
           </a>
           <div class="content">
             <div class="toggle-container">
               <label class="toggle-switch">
-                <input
-                  type="checkbox"
-                  id="toggle-tat"
-                  onclick="mostrarTAT(event)"
-                />
+                <input type="checkbox" id="toggle-tat" onclick="mostrarTAT(event)"/>
                 <span class="slider"></span>
               </label>
-              <label for="toggle-tat"><b>Ver conteúdo</b></label>
+              <label for="toggle-tat"><b>View content</b></label>
             </div>
             <section id="elemento-pai-tat"></section>
-            <small class="tag curso">Curso</small>
+            <small class="tag curso">Course</small>
           </div>
         </div>
 
         <div class="categoria-verificar">
-          <a
-            href="https://www.atlanticoavanti.com.br/bootcamp"
-            target="_blank"
-            class="memory"
-          >
-            <small>Agosto de 2023 - Setembro de 2023</small>
-            <h2>Básico de Quality Assurance</h2>
+          <a href="https://www.atlanticoavanti.com.br/bootcamp" target="_blank" class="memory">
+            <small>August 2023 - September 2023</small>
+            <h2>Quality Assurance Basics</h2>
             <p>Atlântico Avanti</p>
-            <div>
-              <img src="assets\atlantico.png" alt="Logo do Atlântico Avanti." />
-            </div>
+            <div><img src="assets\atlantico.png" alt="Atlântico Avanti Logo." /></div>
           </a>
           <div class="content">
             <div class="toggle-container">
               <label class="toggle-switch">
-                <input
-                  type="checkbox"
-                  id="toggle-bootcamp"
-                  onclick="mostrarAtlantico(event)"
-                />
+                <input type="checkbox" id="toggle-bootcamp" onclick="mostrarAtlantico(event)"/>
                 <span class="slider"></span>
               </label>
-              <label for="toggle-bootcamp"><b>Ver conteúdo</b></label>
+              <label for="toggle-bootcamp"><b>View content</b></label>
             </div>
             <section id="elemento-pai-atlantico"></section>
             <small class="tag bootcamp">Bootcamp</small>
@@ -232,15 +197,10 @@
 
         <div class="categoria-verificar">
           <a href="https://qacoders.com.br/" target="_blank" class="memory">
-            <small>Abril de 2023 - Junho de 2023</small>
-            <h2>Formação Quality Assurance</h2>
+            <small>April 2023 - June 2023</small>
+            <h2>Quality Assurance Training</h2>
             <p>Qa.Coders</p>
-            <div>
-              <img
-                src="./assets/Qa.Coders_remini.jpg"
-                alt="Logo da instituição Qa.Coders."
-              />
-            </div>
+            <div><img src="./assets/Qa.Coders_remini.jpg" alt="Qa.Coders Logo."/></div>
           </a>
           <div class="content">
             <div class="toggle-container">
@@ -248,65 +208,56 @@
                 <input type="checkbox" id="toggle-qa" onclick="mostrarQa(event)" />
                 <span class="slider"></span>
               </label>
-              <label for="toggle-qa"><b>Ver conteúdo</b></label>
+              <label for="toggle-qa"><b>View content</b></label>
             </div>
             <section id="elemento-pai-qa"></section>
-            <small class="tag programa">Programa</small>
+            <small class="tag programa">Program</small>
           </div>
         </div>
 
         <div class="categoria-verificar">
           <a href="https://www.portaltechs.com/" target="_blank" class="memory">
-            <small>Abril de 2023 - Junho de 2023</small>
-            <h2>Introdução à Programação com foco em Front-end</h2>
+            <small>April 2023 - June 2023</small>
+            <h2>Introduction to Programming with a Focus on Front-end</h2>
             <p>
               Portal Tech
-              <br />
-              <small>Programa criado pela AWS e pela Meta. Ministrado por Proz Educação.</small>
+              <br>
+              <small>Program by AWS and Meta. Taught by Proz Educação.</small>
             </p>
-            <div>
-              <img
-                src="./assets/Proz_remini.jpg"
-                alt="Logo da instituição Proz Educação."
-              />
-            </div>
+            <div><img src="./assets/Proz_remini.jpg" alt="Proz Educação Logo."/></div>
           </a>
           <div class="content">
             <div class="toggle-container">
               <label class="toggle-switch">
-                <input
-                  type="checkbox"
-                  id="toggle-proz"
-                  onclick="mostrarProz(event)"
-                />
+                <input type="checkbox" id="toggle-proz" onclick="mostrarProz(event)"/>
                 <span class="slider"></span>
               </label>
-              <label for="toggle-proz"><b>Ver conteúdo</b></label>
+              <label for="toggle-proz"><b>View content</b></label>
             </div>
             <section id="elemento-pai-proz"></section>
-            <small class="tag curso">Curso</small>
+            <small class="tag curso">Course</small>
           </div>
         </div>
       </div>
 
       <div id="filtro-container">
         <div class="opcoes-filtro">
-          <h3>Filtrar por:</h3>
-          <p><small><i>Experiências que correspondem a qualquer filtro selecionado serão exibidas.</i></small></p>
+          <h4>Filter by:</h4>
+          <p><small><i>Education matching any selected filter will be shown.</i></small></p>
           <br>
-          <h4>Academia:</h4>
+          <h4>Academic:</h4>
           <div class="categoria">
-            <span class="opcao" data-valor="Graduação">Graduação</span>
+            <span class="opcao" data-valor="Degree">Degree</span>
           </div>
           <h4>Extracurricular:</h4>
           <div class="categoria">
             <span class="opcao" data-valor="Bootcamp">Bootcamp</span>
-            <span class="opcao" data-valor="Curso">Curso</span>
-            <span class="opcao" data-valor="Programa">Programa</span>
+            <span class="opcao" data-valor="Course">Course</span>
+            <span class="opcao" data-valor="Program">Program</span>
           </div>
           <div class="btns-filtro">
-            <button id="botaoFiltrar">Filtrar</button>
-            <button id="botaoLimpar">Limpar</button>
+            <button id="botaoFiltrar">Filter</button>
+            <button id="botaoLimpar">Clear</button>
           </div>
         </div>
       </div>
@@ -316,8 +267,8 @@
 
     <footer>
       <div>
-        <button id="btnTopo" class="btnTopo" title="Voltar ao topo">
-          ⬆ Voltar ao topo
+        <button id="btnTopo" class="btnTopo" title="Back to top">
+          ⬆ Back to top
         </button>
       </div>
     </footer>
