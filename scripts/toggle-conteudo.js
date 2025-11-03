@@ -18,7 +18,14 @@ function mostrarSofist(event) {
       "elemento-pai-sofist",
       `
       <ul>
-        Ops, ainda não temos informações sobre esta experiência.
+        <li>Atuação tanto em projetos nacionais quanto internacionais (idioma principal: inglês);</li>
+        <li>Planejar, criar e executar testes manuais em aplicações web, garantindo a cobertura de testes adequada;</li>
+        <li>Participar das reuniões de planejamento para entender as funcionalidades e contribuir com a perspectiva de qualidade;</li>
+        <li>Colaborar com desenvolvedores e outros membros do time para identificar e realizar a gestão de bugs;</li>
+        <li>Ajudar a identificar melhorias nos processos de desenvolvimento e qualidade;</li>
+        <li>Analisar de bugs e defeitos - tipos mais frequentes, análise de causa raiz, entre outros critérios;</li>
+        <li>Desenvolvimento de aplicações com Apps Script para gerenciamento de dados e atividades realizadas;</li>
+        <li>Criar e atuar em um projeto de capacitação de QAs para projetos internacionais.</li>
       </ul>
       `
     )
@@ -34,13 +41,11 @@ function mostrarAgenda(event) {
       "elemento-pai-agenda",
       `
       <ul>
-        <li>Planejar, criar e executar testes manuais em aplicações web;</li>
+        <li>Planejar, criar e executar testes manuais em aplicações web, garantindo a cobertura de testes adequada;</li>
         <li>Desenvolver e manter scripts de testes de integração automatizados;</li>
         <li>Participar das reuniões de planejamento para entender as funcionalidades e contribuir com a perspectiva de qualidade;</li>
-        <li>Colaborar com desenvolvedores e outros membros do time para identificar, relatar e acompanhar a resolução de bugs;</li>
-        <li>Garantir que todas as entregas sigam os padrões de qualidade estabelecidos antes de serem liberadas para o ambiente de produção;</li>
+        <li>Colaborar com desenvolvedores e outros membros do time para identificar e realizar a gestão de bugs;</li>
         <li>Ajudar a identificar melhorias nos processos de desenvolvimento e qualidade;</li>
-        <li>Garantir a cobertura de testes adequada para minimizar falhas em produção;</li>
         <li>Documentar os casos de teste e criar relatórios de bugs.</li>
       </ul>
       `
@@ -62,9 +67,8 @@ function mostrarEstagio(event) {
       "elemento-pai-estagio",
       `
       <ul>
-        <li>Planejar, criar e executar testes manuais em aplicações web;</li>
+        <li>Planejar, criar e executar testes manuais em aplicações web, garantindo a cobertura de testes adequada;</li>
         <li>Colaborar com desenvolvedores e outros membros do time para identificar, relatar e acompanhar a resolução de bugs;</li>
-        <li>Garantir que todas as entregas sigam os padrões de qualidade estabelecidos antes de serem liberadas para o ambiente de produção;</li>
         <li>Prototipação de funcionalidades;</li>
         <li>Documentação de sistemas;</li>
         <li>Análise de requisitos e especificações.</li>

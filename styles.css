@@ -45,15 +45,12 @@ body {
   overflow-y: visible;
 }
 
-/* CORREÇÃO AQUI: Mudei de ".main-wrapper" para "main" */
-/* Isso aplicará o padding a TODAS as páginas, incluindo a index.html */
 main {
   padding: 100px 64px 48px 64px;
   grid-area: timeline;
   animation: entering 0.7s ease-in-out;
 }
 
-/* Esta regra SÓ se aplica às páginas de filtro, pois index.html não tem ".conteudo-principal" */
 .conteudo-principal {
   display: flex;
   gap: 24px;
@@ -124,9 +121,6 @@ main {
   width: auto;
 }
 
-/* CORREÇÃO AQUI: Voltamos aos seletores originais "main div" */
-/* Isso funciona para a index.html (main > div.sobre_mim > h1) */
-/* E para as outras páginas (main > div.titulo-e-filtro > h1) */
 main div h1,
 main div h2,
 main div p {
@@ -181,13 +175,17 @@ main button:hover {
   padding: 0;
 }
 
+/* --- MUDANÇA AQUI 1 --- */
+/* O card deve ser flex para centralizar seu conteúdo (<p>) verticalmente */
 .resumo_qualificacoes {
   padding: 32px;
   border-radius: 8px;
-  display: grid;
+  display: flex; /* <-- GARANTE QUE É UM CONTAINER FLEX */
+  align-items: center; /* <-- CENTRALIZA O <p> VERTICALMENTE */
   gap: 16px;
   background: linear-gradient(#0016a51a, #0059ff34);
   color: #f1f3f5;
+  width: 100%; /* Garante que o item flex preencha a célula do grid */
 }
 
 .toggle-container {
@@ -632,18 +630,16 @@ main button#botaoLimpar {
     border-right: solid 1px;
   }
 
-  /* A regra 'main' já cuida do padding da index.html em mobile */
   main {
     padding: 32px 24px 0 24px;
   }
 
-  /* Reverte o layout flex para empilhado */
   .conteudo-principal {
     display: block;
   }
 
   .lista-conteudo {
-    flex: none; /* Reseta o flex */
+    flex: none; 
     width: 100%;
   }
 
@@ -701,14 +697,12 @@ main button#botaoLimpar {
     margin-top: 6px;
   }
 
-  /* Mostra o botão de filtro no mobile */
   .botao-filtro {
     display: flex;
   }
 
-  /* Transforma a sidebar em modal no mobile */
   #filtro-container {
-    display: none; /* Oculto por padrão */
+    display: none; 
     position: fixed;
     z-index: 998;
     left: 50%;
@@ -716,8 +710,8 @@ main button#botaoLimpar {
     transform: translate(-50%, -50%);
     width: 90%;
     max-width: 400px;
-    min-width: auto; /* Reseta o min-width do desktop */
-    flex: none; /* Reseta o flex do desktop */
+    min-width: auto; 
+    flex: none; 
   }
 }
 
@@ -725,5 +719,36 @@ main button#botaoLimpar {
   .projetos {
     gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* --- REGRAS PARA O GRID DA HOME --- */
+
+/* 1. O container é grid e vai esticar os filhos */
+.grid-resumo {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  align-items: stretch; /* <-- GARANTE QUE OS CARDS ESTIQUEM */
+}
+
+/* 2. Regra para os itens do grid: centralizados e com max-width */
+.grid-resumo .resumo_qualificacoes {
+  max-width: 600px;
+  justify-self: center;
+  /* width: 100% (já está no .resumo_qualificacoes) */
+}
+
+/* 3. Breakpoint para 2 colunas */
+@media (min-width: 864px) {
+   .grid-resumo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 4. Breakpoint para 3 colunas */
+@media (min-width: 1280px) {
+   .grid-resumo {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

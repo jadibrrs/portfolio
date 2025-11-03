@@ -1,3 +1,11 @@
-# Olá, este é meu portfólio! 
+🇺🇸 
+# Hello! This is my portfolio.
 
-Ele ainda está em construção, mas você já consegue visualizar o que já aprendi. Seja bem-vindo/a/e!
+Through this, you will be able to view my academic and professional trajectory, my skills, and the projects I have developed.
+Welcome!
+
+🇧🇷 
+# Olá! Este é meu portfólio.
+
+Através dele você conseguirá visualizar minha trajetória acadêmica e profissional, minhas habilidades e os projetos que desenvolvi. 
+Seja bem-vindo/a/e!

@@ -6,11 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const botaoFiltrar = document.getElementById("botaoFiltrar")
   const botaoLimpar = document.getElementById("botaoLimpar")
   const categorias = document.querySelectorAll(".categoria-verificar")
-  const elementos = document.querySelectorAll(".categoria-verificar") // Definido aqui
+  const elementos = document.querySelectorAll(".categoria-verificar")
+
+  // VERIFICA SE ESTAMOS NA PÁGINA DE PROJETOS (procurando o div .projetos)
+  const isProjetosPage = document.querySelector(".projetos") !== null
 
   // Função para mostrar o modal de filtro (APENAS EM MOBILE)
   function mostrarModalFiltro() {
-    // Só executa a lógica de modal se o botão de filtro estiver visível (CSS o exibe em mobile)
     if (window.getComputedStyle(botaoFiltro).display !== "none") {
       filtroContainer.style.display = "block"
       filtroOverlay.style.display = "block"
@@ -59,10 +61,23 @@ document.addEventListener("DOMContentLoaded", () => {
         tag.textContent.trim()
       )
 
-      // Verifica se o item possui alguma das categorias selecionadas
-      const exibirfiltros = categoriasSelecionadas.some((categoria) =>
-        tags.includes(categoria)
-      )
+      let exibirfiltros
+
+      // --- LÓGICA DE FILTRO ATUALIZADA ---
+      if (isProjetosPage) {
+        // LÓGICA "E" (AND) para a página de projetos
+        // O item deve conter TODAS as tags selecionadas
+        exibirfiltros = categoriasSelecionadas.every((categoria) =>
+          tags.includes(categoria)
+        )
+      } else {
+        // LÓGICA "OU" (OR) para as outras páginas (Experiência, Formação)
+        // O item deve conter PELO MENOS UMA das tags selecionadas
+        exibirfiltros = categoriasSelecionadas.some((categoria) =>
+          tags.includes(categoria)
+        )
+      }
+      // --- FIM DA LÓGICA ATUALIZADA ---
 
       if (exibirfiltros || categoriasSelecionadas.length === 0) {
         filtros.style.removeProperty("display") // Usa o display definido no CSS
@@ -75,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     esconderModalFiltro()
   })
 
-  // Lógica de "Limpar" (corrigida e movida para cá)
+  // Lógica de "Limpar"
   botaoLimpar.addEventListener("click", () => {
     // Mostrar todos os elementos
     elementos.forEach((elemento) => {
