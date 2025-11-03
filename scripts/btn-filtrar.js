@@ -1,14 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => {
   const botaoFiltro = document.getElementById("botaoFiltro")
-  const modalFiltro = document.getElementById("modalFiltro")
+  const filtroContainer = document.getElementById("filtro-container")
+  const filtroOverlay = document.getElementById("filtro-overlay")
   const opcoes = document.querySelectorAll(".opcao")
   const botaoFiltrar = document.getElementById("botaoFiltrar")
-  const categorias = document.querySelectorAll(".categoria-verificar") // Seleciona todos as categorias correspondentes
+  const botaoLimpar = document.getElementById("botaoLimpar")
+  const categorias = document.querySelectorAll(".categoria-verificar")
+  const elementos = document.querySelectorAll(".categoria-verificar") // Definido aqui
 
-  // Alterna o modal ao clicar no botão
+  // Função para mostrar o modal de filtro (APENAS EM MOBILE)
+  function mostrarModalFiltro() {
+    // Só executa a lógica de modal se o botão de filtro estiver visível (CSS o exibe em mobile)
+    if (window.getComputedStyle(botaoFiltro).display !== "none") {
+      filtroContainer.style.display = "block"
+      filtroOverlay.style.display = "block"
+    }
+  }
+
+  // Função para esconder o modal de filtro (APENAS EM MOBILE)
+  function esconderModalFiltro() {
+    if (window.getComputedStyle(botaoFiltro).display !== "none") {
+      filtroContainer.style.display = "none"
+      filtroOverlay.style.display = "none"
+    }
+  }
+
+  // Clicar no botão de filtro (hambúrguer)
   botaoFiltro.addEventListener("click", () => {
-    modalFiltro.style.display =
-      modalFiltro.style.display === "block" ? "none" : "block"
+    if (window.getComputedStyle(filtroContainer).display === "block") {
+      esconderModalFiltro()
+    } else {
+      mostrarModalFiltro()
+    }
+  })
+
+  // Clicar no fundo (overlay)
+  filtroOverlay.addEventListener("click", () => {
+    esconderModalFiltro()
   })
 
   // Alterna a seleção das opções ao clicar
@@ -18,30 +46,20 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Fecha o modal ao clicar fora dele
-  window.addEventListener("click", (event) => {
-    if (
-      !modalFiltro.contains(event.target) &&
-      !botaoFiltro.contains(event.target)
-    ) {
-      modalFiltro.style.display = "none"
-    }
-  })
-
-  // Filtra as formações ao clicar em "Filtrar"
+  // Filtra ao clicar em "Filtrar"
   botaoFiltrar.addEventListener("click", () => {
     // Pega as categorias selecionadas
     const categoriasSelecionadas = Array.from(opcoes)
       .filter((opcao) => opcao.classList.contains("selecionado"))
       .map((opcao) => opcao.getAttribute("data-valor"))
 
-    // Mostra ou esconde as formações com base nas categorias selecionadas
+    // Mostra ou esconde os itens
     categorias.forEach((filtros) => {
       const tags = Array.from(filtros.querySelectorAll(".tag")).map((tag) =>
         tag.textContent.trim()
       )
 
-      // Verifica se a formação possui alguma das categorias selecionadas
+      // Verifica se o item possui alguma das categorias selecionadas
       const exibirfiltros = categoriasSelecionadas.some((categoria) =>
         tags.includes(categoria)
       )
@@ -51,34 +69,26 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         filtros.style.display = "none"
       }
-
     })
 
-    // Fecha o modal de filtro após filtrar
-    modalFiltro.style.display = "none"
-  })
-})
-
-// Limpar
-const botaoLimpar = document.getElementById("botaoLimpar")
-
-botaoLimpar.addEventListener("click", () => {
-  // Mostrar todos os elementos com a classe .categoria-verificar
-  const elementos = document.querySelectorAll(".categoria-verificar")
-  elementos.forEach((elemento) => {
-    elemento.style.display = "" // Exibe novamente todos os elementos
+    // Fecha o modal (só terá efeito em mobile)
+    esconderModalFiltro()
   })
 
-  // Desmarcar todas as opções de filtro
-  const opcoes = document.querySelectorAll(".opcao.selecionado")
-  opcoes.forEach((opcao) => {
-    opcao.classList.remove("selecionado") // Remove a classe 'selecionado'
-    opcao.classList.add("opcao") // Garante que a classe 'opcao' permaneça
-  })
+  // Lógica de "Limpar" (corrigida e movida para cá)
+  botaoLimpar.addEventListener("click", () => {
+    // Mostrar todos os elementos
+    elementos.forEach((elemento) => {
+      elemento.style.display = "" // Exibe novamente todos os elementos
+    })
 
-  // Se tiver algum input (checkbox ou similar), podemos desmarcar também:
-  const inputs = document.querySelectorAll('input[type="checkbox"]')
-  inputs.forEach((input) => {
-    input.checked = false // Desmarca todos os checkboxes
+    // Desmarcar todas as opções de filtro
+    const opcoesSelecionadas = document.querySelectorAll(".opcao.selecionado")
+    opcoesSelecionadas.forEach((opcao) => {
+      opcao.classList.remove("selecionado")
+    })
+
+    // Fecha o modal (só terá efeito em mobile)
+    esconderModalFiltro()
   })
 })

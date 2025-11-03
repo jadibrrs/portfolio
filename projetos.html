@@ -109,23 +109,150 @@
       </div>
     </header>
 
-    <main>
-      <div class="container-filtro">
-        <div class="titulo-e-filtro">
-          <h1>Projetos</h1>
-          <button id="botaoFiltro" class="botao-filtro">
-            <img src="./assets/filtro.png" alt="" class="filtrar" />
-          </button>
+    <main class="main-wrapper">
+      
+      <div class="titulo-e-filtro">
+        <h1>Projetos</h1>
+        <button id="botaoFiltro" class="botao-filtro">
+          <img src="./assets/filtro.png" alt="" class="filtrar" />
+        </button>
+      </div>
+
+      <div class="conteudo-principal">
+
+        <div class="lista-conteudo">
+          
+          <div class="projetos">
+            <div class="categoria-verificar projeto">
+              <h2>CAT TAT</h2>
+              <div class="descricao-projeto">
+                <p>
+                  Criação de scripts de testes automatizados, web e API.
+                </p>
+                <p>
+                  Desenvolvido durante a realização do curso Testes automatizados com
+                  Cypress - Básico.
+                </p>
+                <p>
+                  Os testes foram realizados na plataforma Central de Atendimento ao
+                  Cliente da escola Talking About Testing, denominada CAT TAT.
+                </p>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/jadibrrs/cypress-basico-v2"
+                  target="_blank"
+                  title="Projeto CAC TAT"
+                  ><button class="ver-projeto">Ver projeto</button></a
+                >
+              </div>
+              <div class="tags">
+                <small class="tag tipo-de-projeto">Automação</small>
+                <small class="tag ferramenta">Cypress</small>
+                <small class="tag linguagem">JavaScript</small>
+              </div>
+            </div>
+
+            <div class="categoria-verificar projeto">
+              <h2>AcademyBugs.com</h2>
+              <div class="descricao-projeto">
+                <p>
+                  Testes exploratórios foram realizados no site
+                  <a href="https://academybugs.com/find-bugs/">AcademyBugs.com</a>,
+                  com registro dos bugs no relatório disponível abaixo.
+                </p>
+                <p>Desenvolvido para resolução de um desafio técnico.</p>
+              </div>
+              <div>
+                <a
+                  href="https://docs.google.com/document/d/1dXrynW-fbQMbcTVK6deDSruIEvy-FQURFGC3hyILOVo/edit?usp=sharing"
+                  target="_blank"
+                  title="Projeto AcademyBugs.com"
+                  ><button>Ver projeto</button></a
+                >
+              </div>
+              <div class="tags">
+                <small class="tag tipo-de-projeto">Documentação</small>
+              </div>
+            </div>
+
+            <div class="categoria-verificar projeto">
+              <h2>dev.finance</h2>
+              <div class="descricao-projeto">
+                <p>Criação de scripts de testes automatizados web.</p>
+                <p>
+                  Os testes foram realizados na plataforma dev.finance, da Agilizei.
+                </p>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/jadibrrs/dev.finance"
+                  target="_blank"
+                  title="Projeto dev.finance"
+                  ><button class="ver-projeto">Ver projeto</button></a
+                >
+              </div>
+              <div class="tags">
+                <small class="tag tipo-de-projeto">Automação</small>
+                <small class="tag ferramenta">Cypress</small>
+                <small class="tag linguagem">JavaScript</small>
+              </div>
+            </div>
+
+            <div class="categoria-verificar projeto">
+              <h2>Desafio de 21 dias programando em Python</h2>
+              <div class="descricao-projeto">
+                <p>Para cada dia, um programa.</p>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/jadibrrs/desafio_21_dias_qa_que_programa"
+                  target="_blank"
+                  title="Projeto Desafio 21 Dias Programando em Python"
+                  ><button>Ver projeto</button></a
+                >
+              </div>
+              <div class="tags">
+                <small class="tag tipo-de-projeto">Programação</small>
+                <small class="tag linguagem">Python</small>
+              </div>
+            </div>
+
+            <div class="categoria-verificar projeto">
+              <h2>Biome Quality</h2>
+              <div class="descricao-projeto">
+                <p>Criação de scripts de testes automatizados web.</p>
+                <p>Desenvolvido para resolução de um desafio técnico.</p>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/jadibrrs/desafio_tecnico_neoprospecta"
+                  target="_blank"
+                  title="Projeto Neoprospecta"
+                  ><button>Ver projeto</button></a
+                >
+              </div>
+              <div class="tags">
+                <small class="tag tipo-de-projeto">Automação</small>
+                <small class="tag ferramenta">Cypress</small>
+                <small class="tag linguagem">JavaScript</small>
+              </div>
+            </div>
+          </div>
+          <br />
         </div>
-        <div id="modalFiltro" class="modal-filtro">
+
+        <div id="filtro-container">
           <div class="opcoes-filtro">
+            <h2>Filtrar por:</h2>
+            <br>
             <h4>Atividade:</h4>
             <div class="categoria">
               <span class="opcao" data-valor="Automação">Automação</span>
               <span class="opcao" data-valor="Programação">Programação</span>
               <span class="opcao" data-valor="Documentação">Documentação</span>
             </div>
-
+            
             <h4>Ferramenta:</h4>
             <div class="categoria">
               <span class="opcao" data-valor="Cypress">Cypress</span>
@@ -143,126 +270,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> <div id="filtro-overlay"></div>
 
-      <div class="projetos">
-        <div class="categoria-verificar projeto">
-          <h2>CAT TAT</h2>
-          <div class="descricao-projeto">
-            <p>
-              Criação de scripts de testes automatizados, web e API.
-            </p>
-            <p>
-              Desenvolvido durante a realização do curso Testes automatizados com
-              Cypress - Básico.
-            </p>
-            <p>
-              Os testes foram realizados na plataforma Central de Atendimento ao
-              Cliente da escola Talking About Testing, denominada CAT TAT.
-            </p>
-          </div>
-          <div>
-            <a
-              href="https://github.com/jadibrrs/cypress-basico-v2"
-              target="_blank"
-              title="Projeto CAC TAT"
-              ><button class="ver-projeto">Ver projeto</button></a
-            >
-          </div>
-          <div class="tags">
-            <small class="tag tipo-de-projeto">Automação</small>
-            <small class="tag ferramenta">Cypress</small>
-            <small class="tag linguagem">JavaScript</small>
-          </div>
-        </div>
-
-        <div class="categoria-verificar projeto">
-          <h2>AcademyBugs.com</h2>
-          <div class="descricao-projeto">
-            <p>
-              Testes exploratórios foram realizados no site
-              <a href="https://academybugs.com/find-bugs/">AcademyBugs.com</a>,
-              com registro dos bugs no relatório disponível abaixo.
-            </p>
-            <p>Desenvolvido para resolução de um desafio técnico.</p>
-          </div>
-          <div>
-            <a
-              href="https://docs.google.com/document/d/1dXrynW-fbQMbcTVK6deDSruIEvy-FQURFGC3hyILOVo/edit?usp=sharing"
-              target="_blank"
-              title="Projeto AcademyBugs.com"
-              ><button>Ver projeto</button></a
-            >
-          </div>
-          <div class="tags">
-            <small class="tag tipo-de-projeto">Documentação</small>
-          </div>
-        </div>
-
-        <div class="categoria-verificar projeto">
-          <h2>dev.finance</h2>
-          <div class="descricao-projeto">
-            <p>Criação de scripts de testes automatizados web.</p>
-            <p>
-              Os testes foram realizados na plataforma dev.finance, da Agilizei.
-            </p>
-          </div>
-          <div>
-            <a
-              href="https://github.com/jadibrrs/dev.finance"
-              target="_blank"
-              title="Projeto dev.finance"
-              ><button class="ver-projeto">Ver projeto</button></a
-            >
-          </div>
-          <div class="tags">
-            <small class="tag tipo-de-projeto">Automação</small>
-            <small class="tag ferramenta">Cypress</small>
-            <small class="tag linguagem">JavaScript</small>
-          </div>
-        </div>
-
-        <div class="categoria-verificar projeto">
-          <h2>Desafio de 21 dias programando em Python</h2>
-          <div class="descricao-projeto">
-            <p>Para cada dia, um programa.</p>
-          </div>
-          <div>
-            <a
-              href="https://github.com/jadibrrs/desafio_21_dias_qa_que_programa"
-              target="_blank"
-              title="Projeto Desafio 21 Dias Programando em Python"
-              ><button>Ver projeto</button></a
-            >
-          </div>
-          <div class="tags">
-            <small class="tag tipo-de-projeto">Programação</small>
-            <small class="tag linguagem">Python</small>
-          </div>
-        </div>
-
-        <div class="categoria-verificar projeto">
-          <h2>Biome Quality</h2>
-          <div class="descricao-projeto">
-            <p>Criação de scripts de testes automatizados web.</p>
-            <p>Desenvolvido para resolução de um desafio técnico.</p>
-          </div>
-          <div>
-            <a
-              href="https://github.com/jadibrrs/desafio_tecnico_neoprospecta"
-              target="_blank"
-              title="Projeto Neoprospecta"
-              ><button>Ver projeto</button></a
-            >
-          </div>
-          <div class="tags">
-            <small class="tag tipo-de-projeto">Automação</small>
-            <small class="tag ferramenta">Cypress</small>
-            <small class="tag linguagem">JavaScript</small>
-          </div>
-        </div>
-      </div>
-      <br>
     </main>
     <footer>
       <div>

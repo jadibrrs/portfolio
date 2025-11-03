@@ -19,6 +19,7 @@
     <script src="./scripts/modal-menu.js" defer></script>
     <script src="./scripts/toggle-conteudo.js" defer></script>
     <script src="./scripts/btn-topo.js" defer></script>
+    <script src="./scripts/btn-filtrar.js" defer></script>
 
     <title>Jadi Barros | Portfólio</title>
   </head>
@@ -107,100 +108,125 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-wrapper">
+      
       <div class="titulo-e-filtro">
-          <h1>Experiência</h1>
-          <!-- <button id="botaoFiltro" class="botao-filtro">
-            <img src="./assets/filtro.png" alt="" class="filtrar" />
-          </button> -->
+        <h1>Experiência</h1>
+        <button id="botaoFiltro" class="botao-filtro">
+          <img src="./assets/filtro.png" alt="" class="filtrar" />
+        </button>
       </div>
 
-      <div>
-        <a
-          href="https://www.sofist.co/"
-          target="_blank"
-          class="memory experience"
-        >
-          <small>Dezembro de 2024 - Atualmente</small>
-          <h2>Sofist</h2>
-          <p>Analista de Testes Humanos</p>
-          <div>
-            <img src="./assets/sofist.png" />
+      <div class="conteudo-principal">
+        
+        <div class="lista-conteudo">
+          
+          <div class="categoria-verificar">
+            <a
+              href="https://www.sofist.co/"
+              target="_blank"
+              class="memory experience"
+            >
+              <small>Dezembro de 2024 - Atualmente</small>
+              <h2>Sofist</h2>
+              <p>Analista de Testes Humanos</p>
+              <div>
+                <img src="./assets/sofist.png" />
+              </div>
+            </a>
+            <div class="content">
+              <div class="toggle-container">
+                <label class="toggle-switch">
+                  <input
+                    type="checkbox"
+                    id="toggle-sofist"
+                    onclick="mostrarSofist(event)"
+                  />
+                  <span class="slider"></span>
+                </label>
+                <label for="toggle-sofist"><b>Ver atividades</b></label>
+              </div>
+              <section id="elemento-pai-sofist"></section>
+              <small class="tag senioridade">Júnior</small>
+            </div>
           </div>
-        </a>
-        <div class="content">
-          <div class="toggle-container">
-            <label class="toggle-switch">
-              <input
-                type="checkbox"
-                id="toggle-sofist"
-                onclick="mostrarSofist(event)"
-              />
-              <span class="slider"></span>
-            </label>
-            <label for="toggle-sofist"><b>Ver atividades</b></label>
-          </div>
-          <section id="elemento-pai-sofist"></section>
-          <small class="tag senioridade">Júnior</small>
-        </div>
-      </div>
 
-      <div>
-        <a
-          href="https://www.agendaassessoria.com.br/"
-          target="_blank"
-          class="memory experience"
-        >
-          <small>Junho de 2024 - Outubro de 2024</small>
-          <h2>Agenda Assessoria</h2>
-          <p>Analista de Qualidade de Software</p>
-          <div>
-            <img src="./assets/agenda.png" />
+          <div class="categoria-verificar">
+            <a
+              href="https://www.agendaassessoria.com.br/"
+              target="_blank"
+              class="memory experience"
+            >
+              <small>Junho de 2024 - Outubro de 2024</small>
+              <h2>Agenda Assessoria</h2>
+              <p>Analista de Qualidade de Software</p>
+              <div>
+                <img src="./assets/agenda.png" />
+              </div>
+            </a>
+            <div class="content">
+              <div class="toggle-container">
+                <label class="toggle-switch">
+                  <input
+                    type="checkbox"
+                    id="toggle-agenda"
+                    onclick="mostrarAgenda(event)"
+                  />
+                  <span class="slider"></span>
+                </label>
+                <label for="toggle-agenda"><b>Ver atividades</b></label>
+              </div>
+              <section id="elemento-pai-agenda"></section>
+              <small class="tag senioridade">Júnior</small>
+            </div>
           </div>
-        </a>
-        <div class="content">
-          <div class="toggle-container">
-            <label class="toggle-switch">
-              <input
-                type="checkbox"
-                id="toggle-agenda"
-                onclick="mostrarAgenda(event)"
-              />
-              <span class="slider"></span>
-            </label>
-            <label for="toggle-agenda"><b>Ver atividades</b></label>
-          </div>
-          <section id="elemento-pai-agenda"></section>
-          <small class="tag senioridade">Júnior</small>
-        </div>
-      </div>
 
-      <div>
-        <a href="https://mpmt.mp.br/" target="_blank" class="memory experience">
-          <small>08 de Agosto de 2023 - 12 de Março de 2024</small>
-          <h2>Ministério Público de Mato Grosso - Departamento de Tecnologia e Informação</h2>
-          <p>Estagiária de TI - Desenvolvimento de Sistemas</p>
-          <div>
-            <img src="./assets/mpmt.png" />
+          <div class="categoria-verificar">
+            <a href="https://mpmt.mp.br/" target="_blank" class="memory experience">
+              <small>08 de Agosto de 2023 - 12 de Março de 2024</small>
+              <h2>Ministério Público de Mato Grosso - Departamento de Tecnologia e Informação</h2>
+              <p>Estagiária de TI - Desenvolvimento de Sistemas</p>
+              <div>
+                <img src="./assets/mpmt.png" />
+              </div>
+            </a>
+            <div class="content">
+              <div class="toggle-container">
+                <label class="toggle-switch">
+                  <input
+                    type="checkbox"
+                    id="toggle-estagio"
+                    onclick="mostrarEstagio(event)"
+                  />
+                  <span class="slider"></span>
+                </label>
+                <label for="toggle-estagio"><b>Ver atividades</b></label>
+              </div>
+              <section id="elemento-pai-estagio"></section>
+              <small class="tag senioridade">Estágio</small>
+            </div>
           </div>
-        </a>
-        <div class="content">
-          <div class="toggle-container">
-            <label class="toggle-switch">
-              <input
-                type="checkbox"
-                id="toggle-estagio"
-                onclick="mostrarEstagio(event)"
-              />
-              <span class="slider"></span>
-            </label>
-            <label for="toggle-estagio"><b>Ver atividades</b></label>
-          </div>
-          <section id="elemento-pai-estagio"></section>
-          <small class="tag senioridade">Estágio</small>
+          <br />
         </div>
-      </div>
-      <br>
+
+        <div id="filtro-container">
+          <div class="opcoes-filtro">
+            <h2>Filtrar por:</h2>
+            <br>
+            <h4>Senioridade:</h4>
+            <div class="categoria">
+              <span class="opcao" data-valor="Estágio">Estágio</span>
+              <span class="opcao" data-valor="Júnior">Júnior</span>
+            </div>
+
+            <div class="btns-filtro">
+              <button id="botaoFiltrar">Filtrar</button>
+              <button id="botaoLimpar">Limpar</button>
+            </div>
+          </div>
+        </div>
+      </div> <div id="filtro-overlay"></div>
+
     </main>
     <footer>
       <div>

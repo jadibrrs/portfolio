@@ -45,11 +45,24 @@ body {
   overflow-y: visible;
 }
 
+/* CORREÇÃO AQUI: Mudei de ".main-wrapper" para "main" */
+/* Isso aplicará o padding a TODAS as páginas, incluindo a index.html */
 main {
   padding: 100px 64px 48px 64px;
   grid-area: timeline;
-
   animation: entering 0.7s ease-in-out;
+}
+
+/* Esta regra SÓ se aplica às páginas de filtro, pois index.html não tem ".conteudo-principal" */
+.conteudo-principal {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.lista-conteudo {
+  flex: 2; /* Ocupa 2/3 do espaço */
+  min-width: 300px; /* Largura mínima para o conteúdo */
 }
 
 .sobre_mim,
@@ -85,7 +98,7 @@ main {
   justify-content: center;
 }
 
-main div a {
+.lista-conteudo div a {
   text-decoration: none;
   color: #02234a;
   padding: 16px 0;
@@ -111,6 +124,9 @@ main div a {
   width: auto;
 }
 
+/* CORREÇÃO AQUI: Voltamos aos seletores originais "main div" */
+/* Isso funciona para a index.html (main > div.sobre_mim > h1) */
+/* E para as outras páginas (main > div.titulo-e-filtro > h1) */
 main div h1,
 main div h2,
 main div p {
@@ -161,7 +177,7 @@ main button:hover {
   background: linear-gradient(#005fd4, #001a39);
 }
 
-main div p a {
+.lista-conteudo div p a {
   padding: 0;
 }
 
@@ -307,13 +323,13 @@ li {
   display: none;
 }
 
-.projetos, .formacoes {
+.projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 24px;
 }
 
-.projeto, .formacao {
+.projeto {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -329,27 +345,6 @@ li {
   gap: 8px;
 }
 
-.fechar {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 6px 12px 6px 12px;
-  background-color: white;
-  border-radius: 8px;
-  border: solid;
-}
-
-.fechar:hover,
-.fechar:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -362,15 +357,8 @@ header {
   background: linear-gradient(#000061, #04003d, #05002c);
   display: flex;
   align-items: center;
-  justify-content: top;
   padding: 12px 64px 0 64px;
-  border-right: solid 1px;
-  border-right: none;
   flex-direction: row;
-  justify-content: space-between;
-  border-right: none;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -492,32 +480,13 @@ small.ferramenta {
   display: none;
 }
 
-.img-em-construcao {
-  width: 300px;
-  height: 300px;
-  border-radius: 8px;
-}
-
-.em-construcao {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 footer {
   padding: 8px 64px 64px 64px;
 }
 
 footer div {
-  display: flex; /* Para garantir que o botão ocupe a linha toda e se alinhe à direita */
-  justify-content: flex-end; /* Empurra o botão para o final (direita) */
-}
-
-.container-filtro {
   display: flex;
-  flex-direction: row;
-  margin: 10px 0 10px 0;
-  position: relative;
+  justify-content: flex-end;
 }
 
 .titulo-e-filtro {
@@ -529,6 +498,7 @@ footer div {
 }
 
 .botao-filtro {
+  display: none; /* Escondido no desktop */
   padding: 10px 15px;
   width: 50px;
   font-size: 16px;
@@ -536,31 +506,38 @@ footer div {
   background-color: #007bff;
   color: #fff;
   border-radius: 5px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
 
 .filtrar {
   width: 15px;
 }
 
-/* Estilos para o modal */
-.modal-filtro {
+#filtro-overlay {
   display: none;
-  position: absolute;
-  top: 100%; /* para posicionar abaixo do botão */
-  right: 0; /* alinhar com o botão */
-  width: 400px;
-  padding: 24px 24px 32px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 997;
+}
+
+/* SIDEBAR DESKTOP */
+#filtro-container {
+  display: block;
+  position: relative;
+  flex: 1; /* Ocupa 1/3 */
+  min-width: 400px;
+  padding: 24px;
   border: 1px solid #ddd;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 998;
+  z-index: 1;
   border-radius: 5px;
-  gap: 16px;
+  align-self: flex-start;
 }
 
 .opcoes-filtro h4 {
@@ -569,7 +546,8 @@ footer div {
   gap: 64px;
 }
 
-.categoria, .categoria-verificar {
+.categoria,
+.categoria-verificar {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -598,7 +576,8 @@ footer div {
   gap: 8px;
 }
 
-#botaoFiltrar, #botaoLimpar {
+#botaoFiltrar,
+#botaoLimpar {
   width: 100%;
   margin-top: 10px;
   padding: 10px;
@@ -629,33 +608,12 @@ footer div {
   background: linear-gradient(#12122e, #01060c);
 }
 
-.grid {
-  display: none;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px; /* Espaçamento entre os itens */
-}
-
-.item {
-  /* background-color: #f1f3f5; */
-  background: linear-gradient(#f1f3f5, #d8dfe8);
-  border: solid 0.5px;
-  padding: 10px;
-  box-sizing: border-box;
-  display: flex;
-  text-align: center;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100px; /* Defina a altura desejada */
-  border-radius: 8px;
-}
-
 main button#botaoLimpar {
   background: linear-gradient(#ffffff, #bbc9db);
   color: #003067;
 }
 
 @media (max-width: 825px) {
-
   li {
     color: #002c62;
     padding: 10px 2px 10px 2px;
@@ -674,8 +632,19 @@ main button#botaoLimpar {
     border-right: solid 1px;
   }
 
+  /* A regra 'main' já cuida do padding da index.html em mobile */
   main {
     padding: 32px 24px 0 24px;
+  }
+
+  /* Reverte o layout flex para empilhado */
+  .conteudo-principal {
+    display: block;
+  }
+
+  .lista-conteudo {
+    flex: none; /* Reseta o flex */
+    width: 100%;
   }
 
   footer {
@@ -732,16 +701,27 @@ main button#botaoLimpar {
     margin-top: 6px;
   }
 
-  #botaoFiltro {
-    display: none;
+  /* Mostra o botão de filtro no mobile */
+  .botao-filtro {
+    display: flex;
+  }
+
+  /* Transforma a sidebar em modal no mobile */
+  #filtro-container {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 998;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    min-width: auto; /* Reseta o min-width do desktop */
+    flex: none; /* Reseta o flex do desktop */
   }
 }
 
 @media (max-width: 415px) {
-  .modal-filtro {
-    width: 100%;
-  }
-
   .projetos {
     gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
