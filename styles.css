@@ -655,6 +655,7 @@ main button#botaoLimpar {
 }
 
 @media (max-width: 825px) {
+
   li {
     color: #002c62;
     padding: 10px 2px 10px 2px;
